@@ -4,6 +4,7 @@ class CreateUniverses < ActiveRecord::Migration[6.0]
       t.string :name
       t.references :user_id
       t.string :description
+      t.references :user, foreign_key: true
 
       t.timestamps
     end
