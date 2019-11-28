@@ -1,0 +1,2 @@
+class StoriesNote < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class UniverseNote < ApplicationRecord
+end
