@@ -1,0 +1,2 @@
+class SequenceNote < ApplicationRecord
+end
