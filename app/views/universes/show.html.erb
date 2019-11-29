@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<h1>UNIVERSE</h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @universe.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @universe.description %>
+</p>
+
+<%= link_to 'Edit', edit_universe_path(@universe) %> |
+<%= link_to 'Back', universes_path %>

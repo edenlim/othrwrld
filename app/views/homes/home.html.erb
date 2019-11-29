@@ -1,3 +1,5 @@
-<h1>Welcome to OthrWrld!</h1>
-
+<h1>Welcome to OthrWrld, <%= @name.username %>!</h1>
+<div>
+	SOME STUFF
+</div>
 <%= link_to 'log out', destroy_user_session_url, method: :delete %>

@@ -5,11 +5,30 @@ class CharactersController < ApplicationController
   # GET /characters.json
   def index
     @characters = Character.all
+    @relationship = Relationship.all
+    # render plain: @relationship.inspect
   end
 
   # GET /characters/1
   # GET /characters/1.json
   def show
+    @character_id = params[:id]
+    @relationship1 = Relationship.where(character1: @character_id)
+    @relationship2 = Relationship.where(character2: @character_id)
+    @relationship = @relationship1 + @relationship2
+    render plain: @relationship.inspect
+    # @qualities = JSON.parse(@character.qualities)
+
+    # respond_to do |format|
+    #   format.json {
+    #       render :json => @character,
+    #       include: :user
+    #   }
+
+    #   format.html
+    # end
+    # render plain: @qualities["Hair"].inspect
+
   end
 
   # GET /characters/new
@@ -19,12 +38,13 @@ class CharactersController < ApplicationController
 
   # GET /characters/1/edit
   def edit
+    @character = Character.find(params[:id])
   end
 
   # POST /characters
   # POST /characters.json
   def create
-    @character = Character.new(character_params)
+    @character = Character.new(character_params.merge(user_id: current_user.id, qualities: '{"Hair": "Red"}'))
 
     respond_to do |format|
       if @character.save
@@ -40,25 +60,23 @@ class CharactersController < ApplicationController
   # PATCH/PUT /characters/1
   # PATCH/PUT /characters/1.json
   def update
-    respond_to do |format|
-      if @character.update(character_params)
-        format.html { redirect_to @character, notice: 'Character was successfully updated.' }
-        format.json { render :show, status: :ok, location: @character }
-      else
-        format.html { render :edit }
-        format.json { render json: @character.errors, status: :unprocessable_entity }
-      end
-    end
+    @character = Character.find(params[:id])
+    @character.update(character_params)
+    redirect_to characters_path
   end
 
   # DELETE /characters/1
   # DELETE /characters/1.json
   def destroy
+    @character = Character.find(params[:id])
     @character.destroy
-    respond_to do |format|
-      format.html { redirect_to characters_url, notice: 'Character was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to characters_path
+    # render plain: @character.inspect
+
+    # respond_to do |format|
+    #   format.html { redirect_to characters_url, notice: 'Character was successfully destroyed.' }
+    #   format.json { head :no_content }
+    # end
   end
 
   private
@@ -69,6 +87,6 @@ class CharactersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def character_params
-      params.require(:character).permit(:attribute, :name)
+      params.require(:character).permit(:name)
     end
 end

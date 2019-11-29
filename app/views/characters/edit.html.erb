@@ -1,6 +1,16 @@
 <h1>Editing Character</h1>
 
-<%= render 'form', character: @character %>
+<%= form_with scope: :character, model: @character, local: true do |form| %>
+
+	<p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
 
 <%= link_to 'Show', @character %> |
 <%= link_to 'Back', characters_path %>

@@ -5,7 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>Attribute</th>
       <th>Name</th>
       <th colspan="3"></th>
     </tr>
@@ -14,7 +13,6 @@
   <tbody>
     <% @characters.each do |character| %>
       <tr>
-        <td><%= character.attribute %></td>
         <td><%= character.name %></td>
         <td><%= link_to 'Show', character %></td>
         <td><%= link_to 'Edit', edit_character_path(character) %></td>

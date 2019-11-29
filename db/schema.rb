@@ -15,22 +15,24 @@ ActiveRecord::Schema.define(version: 2019_11_28_070940) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "character_stories", force: :cascade do |t|
+  create_table "characters", force: :cascade do |t|
+    t.string "name"
+    t.string "qualities"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_characters_on_user_id"
+  end
+
+  create_table "characters_stories", force: :cascade do |t|
     t.bigint "character_id"
     t.bigint "story_id"
     t.integer "importance"
     t.string "notes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["character_id"], name: "index_character_stories_on_character_id"
-    t.index ["story_id"], name: "index_character_stories_on_story_id"
-  end
-
-  create_table "characters", force: :cascade do |t|
-    t.string "name"
-    t.string "qualities"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.index ["character_id"], name: "index_characters_stories_on_character_id"
+    t.index ["story_id"], name: "index_characters_stories_on_story_id"
   end
 
   create_table "relationships", force: :cascade do |t|
@@ -54,10 +56,11 @@ ActiveRecord::Schema.define(version: 2019_11_28_070940) do
     t.bigint "universe_id"
     t.string "genre"
     t.string "summary"
-    t.integer "user_id"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["universe_id"], name: "index_stories_on_universe_id"
+    t.index ["user_id"], name: "index_stories_on_user_id"
   end
 
   create_table "stories_notes", force: :cascade do |t|
@@ -87,11 +90,11 @@ ActiveRecord::Schema.define(version: 2019_11_28_070940) do
 
   create_table "universes", force: :cascade do |t|
     t.string "name"
-    t.bigint "user_id_id"
     t.string "description"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id_id"], name: "index_universes_on_user_id_id"
+    t.index ["user_id"], name: "index_universes_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -102,9 +105,12 @@ ActiveRecord::Schema.define(version: 2019_11_28_070940) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "online_status"
+    t.string "username"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "characters", "users"
+  add_foreign_key "stories", "users"
+  add_foreign_key "universes", "users"
 end

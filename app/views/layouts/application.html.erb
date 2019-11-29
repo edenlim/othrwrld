@@ -10,6 +10,11 @@
   </head>
 
   <body>
+  	<% if user_signed_in?%>
+	  	<%= link_to 'Universe', universes_path%>
+			<%= link_to 'Story' %>
+			<%= link_to 'Character', characters_path %>
+		<% end %>
     <%= yield %>
   </body>
 </html>

@@ -1,14 +1,21 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Attribute:</strong>
-  <%= @character.attribute %>
-</p>
+<%= link_to 'Edit', edit_character_path(@character) %> |
+<%= link_to 'Back', characters_path %>
 
 <p>
   <strong>Name:</strong>
   <%= @character.name %>
 </p>
 
-<%= link_to 'Edit', edit_character_path(@character) %> |
-<%= link_to 'Back', characters_path %>
+<p>
+  <strong>Qualities:</strong>
+  <% @qualities.each do |key,value| %>
+  	<p><%=key%>: <%=value%></p>
+  <% end %>
+</p>
+
+
+
+<div>
+	<%= javascript_pack_tag 'hello_react' %>
+</div>

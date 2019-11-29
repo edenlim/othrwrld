@@ -1,6 +1,6 @@
 class CreateCharacterStories < ActiveRecord::Migration[6.0]
   def change
-    create_table :character_stories do |t|
+    create_table :characters_stories do |t|
       t.references :character
       t.references :story
       t.integer :importance

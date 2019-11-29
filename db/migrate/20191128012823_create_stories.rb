@@ -5,7 +5,6 @@ class CreateStories < ActiveRecord::Migration[6.0]
       t.references :universe
       t.string :genre
       t.string :summary
-      t.integer :user_id
       t.references :user, foreign_key: true
 
       t.timestamps
