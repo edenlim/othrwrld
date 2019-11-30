@@ -12,23 +12,23 @@ class CharactersController < ApplicationController
   # GET /characters/1
   # GET /characters/1.json
   def show
+    @characters = @character.characterRelationship
+
+    # render plain: @characters["Jane Hutton"].affiliation
+
     @character_id = params[:id]
-    @relationship1 = Relationship.where(character1: @character_id)
-    @relationship2 = Relationship.where(character2: @character_id)
-    @relationship = @relationship1 + @relationship2
-    render plain: @relationship.inspect
-    # @qualities = JSON.parse(@character.qualities)
 
-    # respond_to do |format|
-    #   format.json {
-    #       render :json => @character,
-    #       include: :user
-    #   }
+    # render plain: @relationships.inspect
+    @qualities = JSON.parse(@character.qualities)
 
-    #   format.html
-    # end
-    # render plain: @qualities["Hair"].inspect
+    respond_to do |format|
+      format.json {
+          render :json => @character,
+          include: :user
+      }
 
+      format.html
+    end
   end
 
   # GET /characters/new

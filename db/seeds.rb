@@ -16,9 +16,8 @@ Character.create(name: "Marie Alex", qualities: '{"Hair": "Rainbow"}', user_id: 
 Character.create(name: "Roxanne Mecure", qualities: '{"Hair": "Black and white"}', user_id: 1)
 Character.create(name: "Debra", qualities: '{"Hair": "Black"}', user_id: 1)
 
-Relationship.create(character1: 1, character2: 2, relationship: "Cousin")
-Relationship.create(character1: 1, character2: 4,
-  relationship: "Friend")
-Relationship.create(character1: 2, character2: 3, relationship: "Friend")
-Relationship.create(character1: 2, character2: 5, relationship: "Couple")
-Relationship.create(character1: 3, character2: 5, relationship: "Friend")
+Relationship.create(character_id: 1, character2: 2, relationship: "Cousin")
+Relationship.create(character_id: 1, character2: 4, relationship: "Friend")
+Relationship.create(character_id: 2, character2: 3, relationship: "Friend")
+Relationship.create(character_id: 2, character2: 5, relationship: "Couple")
+Relationship.create(character_id: 3, character2: 5, relationship: "Friend")
