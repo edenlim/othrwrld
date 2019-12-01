@@ -1,8 +1,6 @@
-var text = document.getElementById("brand");
-var color = ["0 0 20px #ff005b","0 0 20px #5bff00","0 0 20px #005bff"]
+// var text = document.getElementById("brand");
+// var random = Math.floor(Math.random() * Math.floor(3))
 
-var random = Math.floor(Math.random() * Math.floor(3))
-
-var randomColor = color[random]
-
-text.style.textShadow = randomColor;
+// var neonColor = ["0 0 30px #ff005b","0 0 30px #5bff00","0 0 30px #005bff"]
+// var randomColor = neonColor[random]
+// text.style.textShadow = randomColor;

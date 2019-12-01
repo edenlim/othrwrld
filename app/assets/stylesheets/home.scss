@@ -25,13 +25,12 @@ body{
 	position: relative;
 	background: #1E1E1E;
 	color: white;
-	width: 35vw;
-	min-width: 260px;
-	height: 92vh;
-	min-height: 92vh;
+	width: 30vw;
+	min-width: 30vw;
+	height: 80vh;
+	min-height: 80vh;
 	margin: 0 auto;
-	box-shadow: 0 15px 60px rgba(0, 0, 0, .2);
-	margin-bottom: 15px;
+	margin-top: 5vh;
 }
 
 .myCard .face {
@@ -45,10 +44,6 @@ body{
 	align-items: center;
 }
 
-.myCard .face.face1 {
-	box-sizing: border-box;
-	padding: 20px;
-}
 
 .myCard .face.face2 {
 	background: #111;
@@ -63,15 +58,15 @@ body{
 	transition: 0.5s;
 }
 
-.myCard .face.face2:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50%;
-	height: 100%;
-	background: rgba(255, 255, 255, 0.1);
-}
+// .myCard .face.face2:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 50%;
+// 	height: 100%;
+// 	background: rgba(255, 255, 255, 0.1);
+// }
 
 .myCard:hover .face.face2 {
 	height: 10%;
@@ -82,13 +77,37 @@ body{
 }
 
 .myCard:nth-child(1) .face.face2 {
-	background: linear-gradient(45deg, #47EDE4, #A8F02C);
+	// background: linear-gradient(45deg, #47EDE4, #A8F02C);
+	box-shadow: 0 0 20px #ff005b;
+	border: 2px solid #ff005b;
+	text-shadow: 0 0 20px #ff005b;
+}
+
+.myCard:nth-child(1) .face.face1{
+	box-shadow: 0 0 20px #ff005b;
+	border: 2px solid white;
 }
 
 .myCard:nth-child(2) .face.face2 {
-	background: linear-gradient(45deg, #DFEF44, #E9541F);
+	// background: linear-gradient(45deg, #DFEF44, #E9541F);
+	box-shadow: 0 0 20px #5bff00;
+	border: 2px solid #5bff00;
+	text-shadow: 0 0 20px #5bff00;
+}
+
+.myCard:nth-child(2) .face.face1{
+	box-shadow: 0 0 20px #5bff00;
+	border: 2px solid white;
 }
 
 .myCard:nth-child(3) .face.face2 {
-	background: linear-gradient(45deg, #E02B6B, #64D8E3);
+	// background: linear-gradient(45deg, #E02B6B, #64D8E3);
+	box-shadow: 0 0 20px #005bff;
+	border: 2px solid #005bff;
+	text-shadow: 0 0 20px #005bff;
+}
+
+.myCard:nth-child(3) .face.face1{
+	box-shadow: 0 0 20px #005bff;
+	border: 2px solid white;
 }
