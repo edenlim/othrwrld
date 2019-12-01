@@ -1,4 +1,5 @@
 class StoriesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_story, only: [:show, :edit, :update, :destroy]
 
   # GET /stories
@@ -15,27 +16,25 @@ class StoriesController < ApplicationController
 
   # GET /stories/new
   def new
-    @story = Story.new
+    # @story = Story.new
+    @universes = Universe.all
+    @user_id = current_user.id
   end
 
   # GET /stories/1/edit
   def edit
+    @story = Story.find(params[:id])
+    @universes = Universe.all
+
   end
 
   # POST /stories
   # POST /stories.json
   def create
-    @story = Story.new(story_params)
+    @story = Story.new(story_params.merge(user_id: current_user.id))
 
-    respond_to do |format|
-      if @story.save
-        format.html { redirect_to @story, notice: 'Story was successfully created.' }
-        format.json { render :show, status: :created, location: @story }
-      else
-        format.html { render :new }
-        format.json { render json: @story.errors, status: :unprocessable_entity }
-      end
-    end
+    @story.save
+    redirect_to stories_path
   end
 
   # PATCH/PUT /stories/1

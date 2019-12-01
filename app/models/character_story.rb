@@ -1,3 +1,0 @@
-class CharacterStory < ApplicationRecord
-
-end

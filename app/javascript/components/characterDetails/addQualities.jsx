@@ -3,10 +3,8 @@ import axios from 'axios'
 import classnames from 'classnames'
 
 class AddQualities extends React.Component {
-
-
-
     render(){
+
         // if(this.state.active ===)
         return(
             <div>
@@ -14,7 +12,7 @@ class AddQualities extends React.Component {
                     <form>
                         Key: <input type="text"/><br/>
                         Value: <input type="text"/><br/>
-                        <input type="submit" onClick={()=>{this.props.handleClick()}}/>
+                        <input type="submit" onClick={(e)=>{this.props.handleClick(e)}}/>
                     </form>
                 </div>
 

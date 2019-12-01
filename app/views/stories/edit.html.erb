@@ -1,6 +1,30 @@
 <h1>Editing Story</h1>
 
-<%= render 'form', story: @story %>
+<%= form_with scope: :story, model: @story, local: true do |form| %>
+
+	<%= form.collection_select :universe_id, @universes, :id, :name %>
+
+	<p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :genre %><br>
+    <%= form.text_area :genre %>
+  </p>
+
+  <p>
+    <%= form.label :summary %><br>
+    <%= form.text_area :summary %>
+  </p>
+
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
 
 <%= link_to 'Show', @story %> |
 <%= link_to 'Back', stories_path %>

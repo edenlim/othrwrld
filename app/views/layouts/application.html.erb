@@ -5,15 +5,30 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= stylesheet_link_tag 'scaffolds' %>
     <%= javascript_pack_tag 'application' %>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
   </head>
 
-  <body>
+  <body style="margin: 0">
   	<% if user_signed_in?%>
-	  	<%= link_to 'Universe', universes_path%>
-			<%= link_to 'Story' %>
-			<%= link_to 'Character', characters_path %>
+  		<nav role="navigation" id="mainnav">
+  			<ul>
+  				<li><%= link_to 'Universe', universes_path%></li>
+  				<li><%= link_to 'Story', stories_path %></li>
+  				<li><%= link_to 'Character', characters_path %></li>
+  				<li><%= link_to 'log out', destroy_user_session_url, method: :delete %></li>
+  			</ul>
+  		</nav>
+
+  		<div class="hamb">
+  			<a href=""><i class="fa fa-bars"></i></a>
+  		</div>
+
+  		<div class="hero">
+  			<h1>PARTICLES ON <span>NAVIGATION</span></h1>
+  		</div>
+
 		<% end %>
     <%= yield %>
   </body>

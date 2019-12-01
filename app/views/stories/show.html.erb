@@ -7,7 +7,7 @@
 
 <p>
   <strong>Universe:</strong>
-  <%= @story.universe_id %>
+  <%= @story.universe.name %>
 </p>
 
 <p>
@@ -21,9 +21,13 @@
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @story.user_id %>
+  <strong>Characters:</strong>
+  <% @story.character.each do |character| %>
+  <p><%= character.name %></p>
+  <% end %>
 </p>
+
+
 
 <%= link_to 'Edit', edit_story_path(@story) %> |
 <%= link_to 'Back', stories_path %>

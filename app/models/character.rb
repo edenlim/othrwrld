@@ -17,15 +17,16 @@ class Character < ApplicationRecord
 
     @relationship.each do |relation|
       @character = Character.where(id: relation.character_id)[0]
-
+      puts "sdaasdasd",@character_id
       charName = @character.name.to_s
       if charName == self.name
         @character = Character.where(id: relation.character2)[0]
-        @relation = Relationship.where(character2: @character.id)[0]
+        @relation = relation.affiliation
         charName = @character.name.to_s
         relationHash[charName] = @relation
       elsif charName != self.name
-        @relation = Relationship.where(character_id: @character.id)[0]
+
+        @relation = relation.affiliation
         relationHash[charName] = @relation
       end
     end

@@ -2,12 +2,19 @@
 <%= link_to 'Edit', edit_character_path(@character) %> |
 <%= link_to 'Back', characters_path %>
 
+
 <p>
   <strong>Name:</strong>
   <%= @character.name %>
 </p>
 
+<p>
+  <strong>Story:</strong>
+  <% @character.story.each do |story| %>
+  <p><%= story.name %></p>
+  <% end %>
 
+</p>
 
 <p>
   <strong>Qualities:</strong>
@@ -19,9 +26,10 @@
 <p>
 	<strong>Relationships:</strong>
 	<% @characters.each do |key,value| %>
-		<p><%=key%>: <%= value.affiliation %></p>
+		<p><%=key%>: <%= value %></p>
 	<% end %>
 </p>
 <div>
 	<%= javascript_pack_tag 'hello_react' %>
+	<%= javascript_pack_tag 'd3Graph/test.js' %>
 </div>

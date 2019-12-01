@@ -1,0 +1,70 @@
+
+
+body{
+  background: black;
+  font-family: 'Varela', sans-serif;
+  color: white;
+}
+
+.glitchDiv{
+	height: auto;
+
+	position:relative;
+
+}
+
+.glitch{
+	display: block;
+	position: relative;
+  color:white;
+  font-size:100px;
+  vertical-align: middle;
+  height: 100px;
+  margin:0 auto;
+  line-height: 100px;
+}
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:after{
+	height: 100px;
+	// width: 480px;
+  content:attr(data-text);
+  position:absolute;
+  left:2px;
+  text-shadow:-1px 0 red;
+  top:0;
+  color:white;
+  background:black;
+  overflow:hidden;
+  clip:rect(0,900px,0,0);
+  animation:noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:before{
+	height: 100px;
+	// width: 480px;
+  content:attr(data-text);
+  position:absolute;
+  left:-2px;
+  text-shadow:1px 0 blue;
+  top:0;
+  color:white;
+  background:black;
+  overflow:hidden;
+  clip:rect(0,900px,0,0);
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
+}

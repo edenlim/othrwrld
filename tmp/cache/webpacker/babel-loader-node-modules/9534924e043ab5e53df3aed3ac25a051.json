@@ -1,0 +1,1 @@
+{"ast":null,"code":"console.log(\"WORKS\");","map":{"version":3,"sources":["/Users/eden/originalProject/GAProject4/othrwrld/app/javascript/packs/test.js"],"names":["console","log"],"mappings":"AAAAA,OAAO,CAACC,GAAR,CAAY,OAAZ","sourcesContent":["console.log(\"WORKS\")"]},"metadata":{},"sourceType":"module"}

@@ -1,5 +1,36 @@
 <h1>Welcome to OthrWrld, <%= @name.username %>!</h1>
-<div>
-	SOME STUFF
+<div class="homeDivFlex">
+	<a href="/universes" class="myCard">
+		<div class="face face1">
+			<div class="myContent">
+				<h4>Add your favourite games!</h4>
+			</div>
+		</div>
+		<div class="face face2">
+			<h2>Universe</h2>
+		</div>
+	</a>
+
+	<a href="/stories" class="myCard">
+		<div class="face face1">
+			<div class="myContent">
+				<h4>Add your favourite games!</h4>
+			</div>
+		</div>
+		<div class="face face2">
+			<h2>Stories</h2>
+		</div>
+	</a>
+
+	<a href="/characters" class="myCard">
+		<div class="face face1">
+			<div class="myContent">
+				<h4>Add your favourite games!</h4>
+			</div>
+		</div>
+		<div class="face face2">
+			<h2>Characters</h2>
+		</div>
 </div>
-<%= link_to 'log out', destroy_user_session_url, method: :delete %>
+
+<%= stylesheet_link_tag 'home'%>

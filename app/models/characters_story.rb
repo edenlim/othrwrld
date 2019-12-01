@@ -1,0 +1,3 @@
+class CharactersStory < ApplicationRecord
+
+end

@@ -1,5 +1,11 @@
 class CharactersController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_character, only: [:show, :edit, :update, :destroy]
+
+  def testJSON
+    @@data = File.read("#{Rails.root}/app/javascript/packs/d3Graph/test.json")
+    render :json => @@data
+  end
 
   # GET /characters
   # GET /characters.json
@@ -13,6 +19,8 @@ class CharactersController < ApplicationController
   # GET /characters/1.json
   def show
     @characters = @character.characterRelationship
+
+
 
     # render plain: @characters["Jane Hutton"].affiliation
 
@@ -38,12 +46,14 @@ class CharactersController < ApplicationController
 
   # GET /characters/1/edit
   def edit
+    @stories = Story.all
     @character = Character.find(params[:id])
   end
 
   # POST /characters
   # POST /characters.json
   def create
+
     @character = Character.new(character_params.merge(user_id: current_user.id, qualities: '{"Hair": "Red"}'))
 
     respond_to do |format|
@@ -60,6 +70,7 @@ class CharactersController < ApplicationController
   # PATCH/PUT /characters/1
   # PATCH/PUT /characters/1.json
   def update
+    # render plain: character_params
     @character = Character.find(params[:id])
     @character.update(character_params)
     redirect_to characters_path
@@ -87,6 +98,6 @@ class CharactersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def character_params
-      params.require(:character).permit(:name)
+      params.require(:character).permit(:name, :story_ids => [])
     end
 end

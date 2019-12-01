@@ -2,6 +2,8 @@
 
 <%= form_with scope: :character, model: @character, local: true do |form| %>
 
+	<%= form.collection_check_boxes :story_ids, @stories, :id, :name %>
+
 	<p>
     <%= form.label :name %><br>
     <%= form.text_field :name %>

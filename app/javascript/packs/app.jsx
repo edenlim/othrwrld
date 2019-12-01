@@ -9,11 +9,12 @@ class App extends React.Component {
         }
     }
 
-    handleClick(){
+    handleClick(e){
         if(this.state.active === false){
             console.log("False");
             this.setState({active: true})
         } else if(this.state.active === true){
+            console.log(e)
             console.log("True");
             this.setState({active: false})
         }
@@ -30,10 +31,10 @@ class App extends React.Component {
         }
 
         return(
-            <>
-            {addQualities}
-            {button}
-            </>
+            <div>
+                {addQualities}
+                {button}
+            </div>
         )
     }
 }

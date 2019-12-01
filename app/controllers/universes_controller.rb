@@ -1,4 +1,5 @@
 class UniversesController < ApplicationController
+  before_action :authenticate_user!
   def index
     @universes = Universe.all
   end

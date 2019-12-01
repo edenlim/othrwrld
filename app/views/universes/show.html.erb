@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<h1>UNIVERSE</h1>
+<h1 >UNIVERSE</h1>
 
 <p>
   <strong>Name:</strong>
@@ -9,6 +9,13 @@
 <p>
   <strong>Description:</strong>
   <%= @universe.description %>
+</p>
+
+<p>
+	<strong>List of stories:</strong>
+	<% @universe.story.each do |story| %>
+		<p><%= story.name %></p>
+	<% end %>
 </p>
 
 <%= link_to 'Edit', edit_universe_path(@universe) %> |
