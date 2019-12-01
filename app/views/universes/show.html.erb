@@ -1,10 +1,8 @@
-<p id="notice"><%= notice %></p>
-<h1 >UNIVERSE</h1>
+<div class="glitchDiv">
+	<h1 class="glitch" data-text=<%= @universe.name %>><%= @universe.name %></h1>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @universe.name %>
-</p>
+
 
 <p>
   <strong>Description:</strong>
@@ -17,6 +15,10 @@
 		<p><%= story.name %></p>
 	<% end %>
 </p>
+
+<% if @universe.description.include? "Sci-fi" %>
+	<%= stylesheet_link_tag 'scifiUniverses' %>
+<% end %>
 
 <%= link_to 'Edit', edit_universe_path(@universe) %> |
 <%= link_to 'Back', universes_path %>

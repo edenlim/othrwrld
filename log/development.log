@@ -28795,3 +28795,971 @@ Processing by UniversesController#show as HTML
 Completed 200 OK in 67ms (Views: 34.6ms | ActiveRecord: 23.4ms | Allocations: 10801)
 
 
+Started GET "/universes" for ::1 at 2019-12-01 21:50:58 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2116)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 38.9ms | ActiveRecord: 1.1ms | Allocations: 11378)
+
+
+Started GET "/universes/2" for ::1 at 2019-12-01 21:51:38 +0800
+Processing by UniversesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (21.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/universes_controller.rb:8:in `show'
+  Rendering universes/show.html.erb within layouts/application
+  [1m[36mStory Load (1.1ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."universe_id" = $1[0m  [["universe_id", 2]]
+  ↳ app/views/universes/show.html.erb:16
+  Rendered universes/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1082)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 53.0ms | ActiveRecord: 23.3ms | Allocations: 12193)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:52:54 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (24.8ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 33.5ms | Allocations: 2381)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 41.0ms | ActiveRecord: 25.2ms | Allocations: 12785)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:53:10 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (21.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 36.5ms | Allocations: 12288)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 77.1ms | ActiveRecord: 22.3ms | Allocations: 21457)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:53:11 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (1.0ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2116)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 31.7ms | ActiveRecord: 1.4ms | Allocations: 11374)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:54:10 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (34.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (1.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 2115)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 161ms (Views: 108.2ms | ActiveRecord: 37.4ms | Allocations: 20616)
+
+
+Started GET "/" for ::1 at 2019-12-01 21:54:13 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1345)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 37.1ms | ActiveRecord: 3.6ms | Allocations: 11437)
+
+
+Started GET "/" for ::1 at 2019-12-01 21:54:45 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 60.6ms | Allocations: 11159)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 105.7ms | ActiveRecord: 3.6ms | Allocations: 20357)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:54:49 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (25.2ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 32.5ms | Allocations: 2124)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 32.6ms | ActiveRecord: 27.3ms | Allocations: 11513)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:55:07 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (25.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.3ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 39.0ms | Allocations: 11874)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 92ms (Views: 63.4ms | ActiveRecord: 25.7ms | Allocations: 21038)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:55:17 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (2.0ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 50.3ms | Allocations: 11819)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 79.3ms | ActiveRecord: 3.9ms | Allocations: 20994)
+
+
+Started GET "/universes/1" for ::1 at 2019-12-01 21:56:13 +0800
+Processing by UniversesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUniverse Load (1.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/universes_controller.rb:8:in `show'
+  Rendering universes/show.html.erb within layouts/application
+  [1m[36mStory Load (16.0ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."universe_id" = $1[0m  [["universe_id", 1]]
+  ↳ app/views/universes/show.html.erb:13
+  Rendered universes/show.html.erb within layouts/application (Duration: 22.9ms | Allocations: 1074)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 95ms (Views: 59.3ms | ActiveRecord: 22.9ms | Allocations: 12181)
+
+
+Started GET "/universes/1" for ::1 at 2019-12-01 21:57:59 +0800
+Processing by UniversesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUniverse Load (0.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/universes_controller.rb:8:in `show'
+  Rendering universes/show.html.erb within layouts/application
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."universe_id" = $1[0m  [["universe_id", 1]]
+  ↳ app/views/universes/show.html.erb:13
+  Rendered universes/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 34.9ms | ActiveRecord: 1.6ms | Allocations: 12225)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:58:07 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2384)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 29.6ms | ActiveRecord: 0.9ms | Allocations: 11785)
+
+
+Started GET "/universes/2" for ::1 at 2019-12-01 21:58:09 +0800
+Processing by UniversesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/universes_controller.rb:8:in `show'
+  Rendering universes/show.html.erb within layouts/application
+  [1m[36mStory Load (1.1ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."universe_id" = $1[0m  [["universe_id", 2]]
+  ↳ app/views/universes/show.html.erb:13
+  Rendered universes/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2031)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 34.1ms | ActiveRecord: 2.4ms | Allocations: 11835)
+
+
+Started GET "/universes/2" for ::1 at 2019-12-01 21:59:01 +0800
+Processing by UniversesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUniverse Load (0.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/universes_controller.rb:8:in `show'
+  Rendering universes/show.html.erb within layouts/application
+  [1m[36mStory Load (25.7ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."universe_id" = $1[0m  [["universe_id", 2]]
+  ↳ app/views/universes/show.html.erb:14
+  Rendered universes/show.html.erb within layouts/application (Duration: 36.8ms | Allocations: 2316)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 107ms (Views: 68.6ms | ActiveRecord: 27.2ms | Allocations: 13270)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:59:11 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (25.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2386)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 34.6ms | ActiveRecord: 26.3ms | Allocations: 11799)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:59:19 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1163)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 36.0ms | ActiveRecord: 1.2ms | Allocations: 11729)
+
+
+Started GET "/universes/1" for ::1 at 2019-12-01 21:59:21 +0800
+Processing by UniversesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUniverse Load (0.3ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/universes_controller.rb:8:in `show'
+  Rendering universes/show.html.erb within layouts/application
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."universe_id" = $1[0m  [["universe_id", 1]]
+  ↳ app/views/universes/show.html.erb:14
+  Rendered universes/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1133)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 23.4ms | ActiveRecord: 1.2ms | Allocations: 11230)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:59:23 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 916)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 27.4ms | ActiveRecord: 1.0ms | Allocations: 10336)
+
+
+Started GET "/universes/2" for ::1 at 2019-12-01 21:59:24 +0800
+Processing by UniversesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUniverse Load (0.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/universes_controller.rb:8:in `show'
+  Rendering universes/show.html.erb within layouts/application
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."universe_id" = $1[0m  [["universe_id", 2]]
+  ↳ app/views/universes/show.html.erb:14
+  Rendered universes/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2032)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 24.9ms | ActiveRecord: 2.1ms | Allocations: 11834)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 21:59:28 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (1.1ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 913)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 27.2ms | ActiveRecord: 1.5ms | Allocations: 10328)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:03:32 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1168)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 46.2ms | ActiveRecord: 1.0ms | Allocations: 11753)
+
+
+Started GET "/stories" for ::1 at 2019-12-01 22:03:34 +0800
+Processing by StoriesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (21.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:17
+  [1m[36mUniverse Load (0.3ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mCACHE Universe Load (0.0ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mUniverse Load (0.3ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  Rendered stories/index.html.erb within layouts/application (Duration: 126.7ms | Allocations: 30541)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 163ms (Views: 134.1ms | ActiveRecord: 22.6ms | Allocations: 40396)
+
+
+Started GET "/stories" for ::1 at 2019-12-01 22:04:07 +0800
+Processing by StoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:17
+  [1m[36mUniverse Load (0.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mCACHE Universe Load (0.0ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mUniverse Load (22.8ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  Rendered stories/index.html.erb within layouts/application (Duration: 46.4ms | Allocations: 4690)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 51.7ms | ActiveRecord: 24.8ms | Allocations: 15123)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:04:10 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2392)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 35.6ms | ActiveRecord: 1.6ms | Allocations: 12330)
+
+
+Started GET "/stories" for ::1 at 2019-12-01 22:04:11 +0800
+Processing by StoriesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (1.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:17
+  [1m[36mUniverse Load (26.0ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mCACHE Universe Load (0.0ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  Rendered stories/index.html.erb within layouts/application (Duration: 40.7ms | Allocations: 4398)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 36.5ms | ActiveRecord: 28.6ms | Allocations: 13672)
+
+
+Started GET "/characters" for ::1 at 2019-12-01 22:04:13 +0800
+Processing by CharactersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.9ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/views/characters/index.html.erb:14
+  Rendered characters/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2759)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 35.0ms | ActiveRecord: 1.4ms | Allocations: 12720)
+
+
+Started GET "/stories" for ::1 at 2019-12-01 22:04:16 +0800
+Processing by StoriesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (23.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:17
+  [1m[36mUniverse Load (0.8ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mCACHE Universe Load (0.0ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mUniverse Load (0.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  Rendered stories/index.html.erb within layouts/application (Duration: 35.6ms | Allocations: 4399)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 35.5ms | ActiveRecord: 24.9ms | Allocations: 13674)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:04:18 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2132)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 30.6ms | ActiveRecord: 1.0ms | Allocations: 11399)
+
+
+Started GET "/universes/2" for ::1 at 2019-12-01 22:04:22 +0800
+Processing by UniversesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUniverse Load (0.3ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/universes_controller.rb:8:in `show'
+  Rendering universes/show.html.erb within layouts/application
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."universe_id" = $1[0m  [["universe_id", 2]]
+  ↳ app/views/universes/show.html.erb:14
+  Rendered universes/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2324)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 26.1ms | ActiveRecord: 1.4ms | Allocations: 12276)
+
+
+Started GET "/stories" for ::1 at 2019-12-01 22:04:33 +0800
+Processing by StoriesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:17
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mCACHE Universe Load (0.0ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mUniverse Load (0.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  Rendered stories/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 4399)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 38.8ms | ActiveRecord: 2.1ms | Allocations: 13672)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:04:42 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (22.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 28.1ms | Allocations: 2127)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 32.9ms | ActiveRecord: 23.3ms | Allocations: 11392)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:25:40 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (25.2ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 57.6ms | Allocations: 12203)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 78.5ms | ActiveRecord: 27.0ms | Allocations: 22657)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:25:58 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (27.3ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 78.9ms | Allocations: 11939)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 129ms (Views: 84.7ms | ActiveRecord: 29.0ms | Allocations: 21239)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:26:09 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 32.2ms | Allocations: 11473)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 55.4ms | ActiveRecord: 1.1ms | Allocations: 20646)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:26:27 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.8ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 39.7ms | Allocations: 11933)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 61.9ms | ActiveRecord: 1.5ms | Allocations: 21107)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:26:36 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 31.7ms | Allocations: 11935)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 54.9ms | ActiveRecord: 1.0ms | Allocations: 21114)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:26:48 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (1.1ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 51.3ms | Allocations: 11933)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 100ms (Views: 90.5ms | ActiveRecord: 2.7ms | Allocations: 21240)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:26:57 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (2.1ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 38.1ms | Allocations: 11937)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 59.0ms | ActiveRecord: 3.0ms | Allocations: 21120)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:27:40 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 36.7ms | Allocations: 11933)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 69.3ms | ActiveRecord: 1.3ms | Allocations: 21107)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:29:20 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 40.0ms | Allocations: 11959)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 68.8ms | ActiveRecord: 0.9ms | Allocations: 21131)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:29:42 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.8ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 46.8ms | Allocations: 11951)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 155ms (Views: 138.8ms | ActiveRecord: 9.1ms | Allocations: 21124)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:29:56 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (1.2ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 2705)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 71.1ms | ActiveRecord: 2.0ms | Allocations: 11879)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:30:05 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (6.8ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 50.2ms | Allocations: 11957)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 77.3ms | ActiveRecord: 7.4ms | Allocations: 21130)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:30:34 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (25.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.8ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 45.7ms | Allocations: 11957)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 98.8ms | ActiveRecord: 26.7ms | Allocations: 21136)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:30:42 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (9.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 57.1ms | Allocations: 11957)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 87.1ms | ActiveRecord: 10.6ms | Allocations: 21134)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:31:09 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (26.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 87.8ms | Allocations: 11961)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 148ms (Views: 112.5ms | ActiveRecord: 28.4ms | Allocations: 21140)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:31:30 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (30.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 82.8ms | Allocations: 11107)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 144ms (Views: 96.9ms | ActiveRecord: 39.9ms | Allocations: 20275)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:31:43 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (4.3ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 44.7ms | Allocations: 11952)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 86.4ms | ActiveRecord: 5.0ms | Allocations: 21130)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:31:58 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (30.8ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 90.7ms | Allocations: 11952)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 136ms (Views: 97.7ms | ActiveRecord: 31.7ms | Allocations: 21128)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:32:13 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (39.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (4.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 57.0ms | Allocations: 11953)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 149ms (Views: 92.1ms | ActiveRecord: 44.1ms | Allocations: 21129)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:32:55 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (1.2ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 60.3ms | Allocations: 11955)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 100ms (Views: 92.2ms | ActiveRecord: 1.8ms | Allocations: 21131)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:33:03 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 44.9ms | Allocations: 11136)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 95ms (Views: 86.6ms | ActiveRecord: 1.5ms | Allocations: 20315)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:33:16 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (46.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (2.2ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 62.2ms | Allocations: 11515)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 170ms (Views: 113.2ms | ActiveRecord: 49.1ms | Allocations: 20694)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:33:35 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (21.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 48.6ms | Allocations: 11545)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 123ms (Views: 92.6ms | ActiveRecord: 22.3ms | Allocations: 20721)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:34:16 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (28.9ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 38.6ms | Allocations: 2705)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 47.4ms | ActiveRecord: 29.7ms | Allocations: 11884)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:34:55 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 27.9ms | Allocations: 11946)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 47.8ms | ActiveRecord: 0.9ms | Allocations: 21124)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:35:11 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.9ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 34.5ms | Allocations: 11943)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 58.1ms | ActiveRecord: 2.0ms | Allocations: 21113)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:36:55 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 32.6ms | Allocations: 11513)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 69.2ms | ActiveRecord: 0.8ms | Allocations: 20691)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:37:14 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 30.3ms | Allocations: 11482)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 78.6ms | ActiveRecord: 0.9ms | Allocations: 20654)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:37:49 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (19.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 136.0ms | Allocations: 11077)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 242ms (Views: 199.7ms | ActiveRecord: 29.5ms | Allocations: 20255)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:38:18 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (43.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (1.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 83.6ms | Allocations: 11502)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 183ms (Views: 128.0ms | ActiveRecord: 44.8ms | Allocations: 20673)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:38:26 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (22.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2706)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 92ms (Views: 39.6ms | ActiveRecord: 23.6ms | Allocations: 11885)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:39:26 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 38.6ms | Allocations: 11955)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 60.7ms | ActiveRecord: 1.1ms | Allocations: 21132)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:39:39 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 36.0ms | Allocations: 11954)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 59.0ms | ActiveRecord: 1.2ms | Allocations: 21122)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:39:50 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (2.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 59.6ms | Allocations: 11513)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 130ms (Views: 121.2ms | ActiveRecord: 3.0ms | Allocations: 20682)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:40:07 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 40.1ms | Allocations: 11959)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 60.1ms | ActiveRecord: 1.0ms | Allocations: 21134)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:40:33 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (23.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 52.9ms | Allocations: 11957)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 87ms (Views: 57.2ms | ActiveRecord: 23.8ms | Allocations: 21133)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:40:51 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 33.0ms | Allocations: 11522)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 55.4ms | ActiveRecord: 1.1ms | Allocations: 20696)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:41:23 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (42.1ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 73.5ms | Allocations: 11110)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 71.4ms | ActiveRecord: 42.6ms | Allocations: 20287)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:41:47 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2707)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 0.8ms | Allocations: 11882)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:42:15 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:17
+  Rendered universes/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 2405)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 44.5ms | ActiveRecord: 1.0ms | Allocations: 12823)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:42:30 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:17
+  Rendered universes/index.html.erb within layouts/application (Duration: 29.9ms | Allocations: 12214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 52.6ms | ActiveRecord: 0.9ms | Allocations: 22544)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:42:48 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:17
+  Rendered universes/index.html.erb within layouts/application (Duration: 30.1ms | Allocations: 11964)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 50.0ms | ActiveRecord: 1.2ms | Allocations: 21142)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 22:43:14 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (17.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (1.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:17
+  Rendered universes/index.html.erb within layouts/application (Duration: 68.0ms | Allocations: 11960)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 137ms (Views: 105.4ms | ActiveRecord: 19.3ms | Allocations: 21142)
+
+

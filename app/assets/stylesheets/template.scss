@@ -1,0 +1,22 @@
+body{
+	background-color: #161616;
+}
+
+.headerText{
+	width: 100%;
+	text-align: center;
+	color: #E9E9E9;
+	font-size: 40px;
+	// text-shadow: 0 0 1px black,0 0 20px white;
+	transition: 1s;
+}
+
+.headerText:hover{
+	text-shadow: 0 0 1px black,0 0 40px white;
+}
+
+.tableDiv{
+	display: flex;
+	justify-content: center;
+	margin: 10px 20px;
+}
