@@ -23853,3 +23853,2369 @@ Processing by HomesController#index as HTML
 Completed 200 OK in 35ms (Views: 25.8ms | ActiveRecord: 1.5ms | Allocations: 8556)
 
 
+Started GET "/" for ::1 at 2019-12-01 14:15:52 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 36.9ms | ActiveRecord: 1.5ms | Allocations: 8699)
+
+
+Started GET "/" for ::1 at 2019-12-01 14:15:54 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (25.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 15.6ms | ActiveRecord: 26.2ms | Allocations: 7261)
+
+
+Started GET "/" for ::1 at 2019-12-01 14:15:55 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 13.3ms | ActiveRecord: 1.0ms | Allocations: 7260)
+
+
+Started GET "/" for ::1 at 2019-12-01 14:15:56 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 1.1ms | Allocations: 7258)
+
+
+Started GET "/" for ::1 at 2019-12-01 14:15:56 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 15.2ms | ActiveRecord: 0.9ms | Allocations: 7256)
+
+
+Started GET "/" for ::1 at 2019-12-01 14:15:56 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (22.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 11.5ms | ActiveRecord: 23.3ms | Allocations: 7261)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:32:13 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 190ms (Views: 161.2ms | ActiveRecord: 1.6ms | Allocations: 32379)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:33:49 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 56.1ms | ActiveRecord: 1.0ms | Allocations: 16850)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:34:50 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 51.5ms | ActiveRecord: 0.9ms | Allocations: 16870)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:34:54 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 21.9ms | ActiveRecord: 1.4ms | Allocations: 8306)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:39:37 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1214)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 5.8ms | Allocations: 7575)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "}": expected "}", was ""
+        on line 42:2 of app/assets/stylesheets/navbar.scss
+>> }
+
+   -^
+):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'scaffolds' %>
+     9:     <%= stylesheet_link_tag 'navbar' %>
+    10:     <%= javascript_pack_tag 'application' %>
+    11:     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    12:     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  
+app/assets/stylesheets/navbar.scss:42
+app/views/layouts/application.html.erb:9
+app/controllers/homes_controller.rb:7:in `index'
+Started GET "/" for ::1 at 2019-12-01 15:39:53 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 78.2ms | ActiveRecord: 3.8ms | Allocations: 16098)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:41:16 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 45.7ms | ActiveRecord: 0.9ms | Allocations: 17433)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:43:35 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 65.5ms | ActiveRecord: 0.7ms | Allocations: 18662)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:43:37 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 0.6ms | Allocations: 8309)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:43:37 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 25.1ms | ActiveRecord: 1.2ms | Allocations: 8306)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:45:05 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1360)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: 516f65928d18a1f6391d
+Version: webpack 4.41.2
+Time: 2266ms
+Built at: 12/01/2019 3:45:11 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-000c4413370b20f6f0b7.js  3.89 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-000c4413370b20f6f0b7.js.map  3.59 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-000c4413370b20f6f0b7.js js/navbar-000c4413370b20f6f0b7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 25 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6132ms (Views: 6124.7ms | ActiveRecord: 1.6ms | Allocations: 13478)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:51:00 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1214)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: 38ec60dbfbc54fc7c04b
+Version: webpack 4.41.2
+Time: 2414ms
+Built at: 12/01/2019 3:51:06 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-650bc19e99b5d0ebb8a8.js  4.27 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-650bc19e99b5d0ebb8a8.js.map  4.08 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-650bc19e99b5d0ebb8a8.js js/navbar-650bc19e99b5d0ebb8a8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 416 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5319ms (Views: 5287.4ms | ActiveRecord: 22.0ms | Allocations: 12100)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:52:27 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1214)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2019-12-01 15:52:32 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1214)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: 6e0aa087dedcf60ff3d6
+Version: webpack 4.41.2
+Time: 2268ms
+Built at: 12/01/2019 3:52:32 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-026d337430191d1b6a13.js  4.33 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-026d337430191d1b6a13.js.map  4.13 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-026d337430191d1b6a13.js js/navbar-026d337430191d1b6a13.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 470 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5761ms (Views: 5729.6ms | ActiveRecord: 23.4ms | Allocations: 21832)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:52:34 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 38.6ms | ActiveRecord: 1.2ms | Allocations: 10648)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:52:36 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (61.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 134ms (Views: 59.8ms | ActiveRecord: 66.8ms | Allocations: 10642)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:52:38 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+[Webpacker] Hash: 6e0aa087dedcf60ff3d6
+Version: webpack 4.41.2
+Time: 3620ms
+Built at: 12/01/2019 3:52:39 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-026d337430191d1b6a13.js  4.33 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-026d337430191d1b6a13.js.map  4.13 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-026d337430191d1b6a13.js js/navbar-026d337430191d1b6a13.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 470 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7343ms (Views: 7327.7ms | ActiveRecord: 8.3ms | Allocations: 83000)
+
+
+  [1m[36mUser Load (22.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1328ms (Views: 28.4ms | ActiveRecord: 26.2ms | Allocations: 15233)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:52:41 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 30.8ms | ActiveRecord: 1.0ms | Allocations: 10637)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:53:26 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 54.1ms | ActiveRecord: 1.8ms | Allocations: 11971)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:53:57 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1214)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: 032c91a4759debe48ea1
+Version: webpack 4.41.2
+Time: 1402ms
+Built at: 12/01/2019 3:54:00 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-49e65c2342493b32e6d2.js  4.39 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-49e65c2342493b32e6d2.js.map  4.21 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-49e65c2342493b32e6d2.js js/navbar-49e65c2342493b32e6d2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 538 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3172ms (Views: 3159.5ms | ActiveRecord: 3.6ms | Allocations: 11979)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:54:22 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1214)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: 2820c57e869f13299765
+Version: webpack 4.41.2
+Time: 1593ms
+Built at: 12/01/2019 3:54:26 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-a593903e5d70a9ac81b7.js  4.28 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-a593903e5d70a9ac81b7.js.map  4.09 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-a593903e5d70a9ac81b7.js js/navbar-a593903e5d70a9ac81b7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 421 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3475ms (Views: 3466.6ms | ActiveRecord: 1.2ms | Allocations: 11981)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:56:43 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (27.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1360)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: bb2b66d4b7c8ac78b513
+Version: webpack 4.41.2
+Time: 2098ms
+Built at: 12/01/2019 3:56:48 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-62957f3fd3e1f71af67e.js  4.39 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-62957f3fd3e1f71af67e.js.map  4.21 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-62957f3fd3e1f71af67e.js js/navbar-62957f3fd3e1f71af67e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 539 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5733ms (Views: 5677.4ms | ActiveRecord: 29.1ms | Allocations: 13452)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:58:03 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1214)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: f1eb00b3a7ff86de008c
+Version: webpack 4.41.2
+Time: 1424ms
+Built at: 12/01/2019 3:58:06 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-b4534eb5904596238096.js  7.27 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-b4534eb5904596238096.js.map  3.52 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-b4534eb5904596238096.js js/navbar-b4534eb5904596238096.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 3.4 KiB {navbar} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+ERROR in ./app/javascript/packs/navbar.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/eden/originalProject/GAProject4/othrwrld/app/javascript/packs/navbar.js: Unexpected token, expected "," (24:1)
+
+  22 |     var bubble = document.getElementById('bubble')
+  23 |     console.log(bubble)
+> 24 | }
+     |  ^
+    at Object.raise (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:6975:17)
+    at Object.unexpected (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:8368:16)
+    at Object.expect (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:8354:28)
+    at Object.parseCallExpressionArguments (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:9387:14)
+    at Object.parseSubscript (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:9315:29)
+    at Object.parseSubscripts (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:9231:19)
+    at Object.parseExprSubscripts (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:9220:17)
+    at Object.parseMaybeUnary (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:9190:21)
+    at Object.parseExprOps (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:9056:23)
+    at Object.parseMaybeConditional (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:9029:23)
+    at Object.parseMaybeAssign (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:8975:21)
+    at Object.parseExpression (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:8925:23)
+    at Object.parseStatementContent (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:10785:23)
+    at Object.parseStatement (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:10656:17)
+    at Object.parseBlockOrModuleBlockBody (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:11232:25)
+    at Object.parseBlockBody (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:11219:10)
+    at Object.parseTopLevel (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:10587:10)
+    at Object.parse (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:12097:10)
+    at parse (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/parser/lib/index.js:12148:38)
+    at parser (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/core/lib/transformation/normalize-file.js:168:34)
+    at normalizeFile (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/core/lib/transformation/normalize-file.js:102:11)
+    at runSync (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/core/lib/transformation/index.js:44:43)
+    at runAsync (/Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/core/lib/transformation/index.js:35:14)
+    at /Users/eden/originalProject/GAProject4/othrwrld/node_modules/@babel/core/lib/transform.js:34:34
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2977ms (Views: 2968.7ms | ActiveRecord: 1.0ms | Allocations: 11876)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:58:26 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (24.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1214)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: fee9a3d20736b2721632
+Version: webpack 4.41.2
+Time: 1612ms
+Built at: 12/01/2019 3:58:29 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-1560b27f24bc6e0c19e5.js  4.46 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-1560b27f24bc6e0c19e5.js.map  4.29 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-1560b27f24bc6e0c19e5.js js/navbar-1560b27f24bc6e0c19e5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 606 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3209ms (Views: 3177.5ms | ActiveRecord: 25.5ms | Allocations: 11998)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:58:40 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (15.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1215)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: 0265e12effadf0d94867
+Version: webpack 4.41.2
+Time: 1636ms
+Built at: 12/01/2019 3:58:44 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-c378e80d314a2a40c979.js  4.47 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-c378e80d314a2a40c979.js.map   4.3 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-c378e80d314a2a40c979.js js/navbar-c378e80d314a2a40c979.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 616 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3658ms (Views: 3620.4ms | ActiveRecord: 16.2ms | Allocations: 11988)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:59:27 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1360)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: 38ec60dbfbc54fc7c04b
+Version: webpack 4.41.2
+Time: 1459ms
+Built at: 12/01/2019 3:59:30 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-650bc19e99b5d0ebb8a8.js  4.27 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-650bc19e99b5d0ebb8a8.js.map  4.08 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-650bc19e99b5d0ebb8a8.js js/navbar-650bc19e99b5d0ebb8a8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 416 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3027ms (Views: 3022.6ms | ActiveRecord: 0.8ms | Allocations: 13322)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:59:32 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 32.5ms | ActiveRecord: 2.0ms | Allocations: 10640)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:59:35 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 30.8ms | ActiveRecord: 1.0ms | Allocations: 10636)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:59:37 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 42.8ms | ActiveRecord: 0.9ms | Allocations: 10640)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:59:47 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 27.6ms | ActiveRecord: 0.9ms | Allocations: 10647)
+
+
+Started GET "/" for ::1 at 2019-12-01 15:59:54 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (24.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 27.9ms | ActiveRecord: 24.7ms | Allocations: 10643)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:02:02 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 51.6ms | ActiveRecord: 0.9ms | Allocations: 18524)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:02:04 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 32.2ms | ActiveRecord: 0.8ms | Allocations: 10638)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:02:05 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 1.1ms | Allocations: 10642)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:03:35 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (28.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 182ms (Views: 143.0ms | ActiveRecord: 29.4ms | Allocations: 18451)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:03:38 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 27.2ms | ActiveRecord: 1.1ms | Allocations: 10642)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:03:40 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 31.4ms | ActiveRecord: 1.1ms | Allocations: 10635)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:03:41 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 35.4ms | ActiveRecord: 0.7ms | Allocations: 10642)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:04:21 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 46.7ms | ActiveRecord: 0.9ms | Allocations: 11984)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:04:43 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 38.4ms | ActiveRecord: 0.6ms | Allocations: 11977)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:05:05 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 30.5ms | ActiveRecord: 0.7ms | Allocations: 11957)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:05:28 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 48.4ms | ActiveRecord: 0.9ms | Allocations: 11962)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:05:41 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1215)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: c911eed3a932b44f3f4c
+Version: webpack 4.41.2
+Time: 3648ms
+Built at: 12/01/2019 4:05:49 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-c830791650c5ccf02c68.js  3.87 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-c830791650c5ccf02c68.js.map  3.52 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-c830791650c5ccf02c68.js js/navbar-c830791650c5ccf02c68.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 0 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8127ms (Views: 8120.4ms | ActiveRecord: 0.7ms | Allocations: 19480)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 16:07:45 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (1.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1168)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 58.4ms | ActiveRecord: 1.8ms | Allocations: 11382)
+
+
+Started GET "/stories" for ::1 at 2019-12-01 16:07:47 +0800
+Processing by StoriesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (1.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:17
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mCACHE Universe Load (0.1ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mUniverse Load (24.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  Rendered stories/index.html.erb within layouts/application (Duration: 40.7ms | Allocations: 3490)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 45.4ms | ActiveRecord: 26.9ms | Allocations: 13715)
+
+
+Started GET "/characters" for ::1 at 2019-12-01 16:07:49 +0800
+Processing by CharactersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (1.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/views/characters/index.html.erb:14
+  Rendered characters/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 35.7ms | ActiveRecord: 2.1ms | Allocations: 11776)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 16:07:51 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 27.2ms | ActiveRecord: 1.0ms | Allocations: 10457)
+
+
+Started GET "/stories" for ::1 at 2019-12-01 16:07:52 +0800
+Processing by StoriesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering stories/index.html.erb within layouts/application
+  [1m[36mStory Load (24.6ms)[0m  [1m[34mSELECT "stories".* FROM "stories"[0m
+  ↳ app/views/stories/index.html.erb:17
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mCACHE Universe Load (0.0ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  [1m[36mUniverse Load (0.4ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/stories/index.html.erb:20
+  Rendered stories/index.html.erb within layouts/application (Duration: 33.5ms | Allocations: 3208)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 32.9ms | ActiveRecord: 26.1ms | Allocations: 12754)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 16:07:57 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 913)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 26.4ms | ActiveRecord: 1.0ms | Allocations: 10444)
+
+
+Started GET "/universes/1" for ::1 at 2019-12-01 16:08:00 +0800
+Processing by UniversesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUniverse Load (0.5ms)[0m  [1m[34mSELECT "universes".* FROM "universes" WHERE "universes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/universes_controller.rb:8:in `show'
+  Rendering universes/show.html.erb within layouts/application
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories" WHERE "stories"."universe_id" = $1[0m  [["universe_id", 1]]
+  ↳ app/views/universes/show.html.erb:16
+  Rendered universes/show.html.erb within layouts/application (Duration: 48.7ms | Allocations: 7913)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 74.4ms | ActiveRecord: 1.2ms | Allocations: 18156)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 16:08:07 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (24.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.6ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 916)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 30.6ms | ActiveRecord: 24.9ms | Allocations: 10455)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:08:12 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 47.8ms | ActiveRecord: 0.9ms | Allocations: 10656)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:10:39 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (25.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1360)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 44.9ms | ActiveRecord: 25.8ms | Allocations: 11961)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:11:56 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (23.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 173ms (Views: 137.9ms | ActiveRecord: 24.0ms | Allocations: 19574)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:13:10 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1358)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 88.3ms | ActiveRecord: 1.1ms | Allocations: 20875)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:14:05 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 106.0ms | ActiveRecord: 1.0ms | Allocations: 11975)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:14:07 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 35.9ms | ActiveRecord: 1.3ms | Allocations: 10634)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:14:10 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 26.6ms | ActiveRecord: 0.7ms | Allocations: 10637)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:15:00 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 52.9ms | ActiveRecord: 0.6ms | Allocations: 18739)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:16:18 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1364)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 57.3ms | ActiveRecord: 2.7ms | Allocations: 10906)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:16:25 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 42.2ms | ActiveRecord: 1.0ms | Allocations: 11959)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:16:42 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 106.9ms | ActiveRecord: 1.8ms | Allocations: 18887)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:16:51 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 89.0ms | ActiveRecord: 0.8ms | Allocations: 19350)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:19:16 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (25.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1363)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 147ms (Views: 110.8ms | ActiveRecord: 26.3ms | Allocations: 20143)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:20:38 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 73.7ms | ActiveRecord: 0.9ms | Allocations: 18810)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:21:18 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 104.5ms | ActiveRecord: 1.1ms | Allocations: 19246)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:22:13 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 49.7ms | ActiveRecord: 0.9ms | Allocations: 19614)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:22:24 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (25.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 140ms (Views: 109.1ms | ActiveRecord: 25.7ms | Allocations: 20059)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:22:51 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 48.2ms | ActiveRecord: 0.8ms | Allocations: 19678)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:23:08 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 46.3ms | ActiveRecord: 0.6ms | Allocations: 19270)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:23:21 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 46.1ms | ActiveRecord: 0.6ms | Allocations: 19227)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:24:09 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 166ms (Views: 154.0ms | ActiveRecord: 1.6ms | Allocations: 20061)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:24:21 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (24.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 200ms (Views: 161.1ms | ActiveRecord: 29.2ms | Allocations: 20065)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:24:33 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 92ms (Views: 82.6ms | ActiveRecord: 1.3ms | Allocations: 18828)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:24:48 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 84.6ms | ActiveRecord: 0.8ms | Allocations: 19213)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:25:53 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 53.6ms | ActiveRecord: 0.7ms | Allocations: 20061)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:26:03 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 112ms (Views: 102.4ms | ActiveRecord: 0.8ms | Allocations: 19268)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:26:36 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (22.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 150ms (Views: 115.8ms | ActiveRecord: 25.1ms | Allocations: 18838)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:27:04 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 50.1ms | ActiveRecord: 0.7ms | Allocations: 19663)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:27:29 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 114ms (Views: 103.1ms | ActiveRecord: 1.3ms | Allocations: 19275)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:28:08 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 121ms (Views: 109.7ms | ActiveRecord: 1.5ms | Allocations: 19759)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:29:44 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (20.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 145ms (Views: 117.5ms | ActiveRecord: 21.0ms | Allocations: 19659)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:30:15 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1216)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 52.9ms | ActiveRecord: 0.8ms | Allocations: 19675)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:30:33 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 76.9ms | ActiveRecord: 0.9ms | Allocations: 18860)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:30:49 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 128ms (Views: 121.1ms | ActiveRecord: 0.9ms | Allocations: 19235)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:33:22 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 125ms (Views: 114.3ms | ActiveRecord: 0.8ms | Allocations: 18432)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:35:05 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1363)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 121ms (Views: 110.9ms | ActiveRecord: 1.1ms | Allocations: 21440)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:35:22 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 140ms (Views: 129.3ms | ActiveRecord: 1.1ms | Allocations: 18822)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:35:44 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (32.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 168ms (Views: 119.5ms | ActiveRecord: 40.2ms | Allocations: 19314)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:35:55 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (26.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 167ms (Views: 124.9ms | ActiveRecord: 27.8ms | Allocations: 18447)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:36:06 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 78.3ms | ActiveRecord: 6.8ms | Allocations: 19275)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:36:17 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (41.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 153ms (Views: 95.8ms | ActiveRecord: 45.9ms | Allocations: 19704)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:36:30 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 68.6ms | ActiveRecord: 0.8ms | Allocations: 18090)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:36:43 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (24.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 128ms (Views: 92.8ms | ActiveRecord: 27.9ms | Allocations: 18877)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:36:51 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 58.9ms | ActiveRecord: 0.8ms | Allocations: 19686)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:37:00 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 98ms (Views: 89.6ms | ActiveRecord: 0.9ms | Allocations: 18905)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:37:58 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 0.7ms | Allocations: 11078)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:38:28 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (30.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 143ms (Views: 103.0ms | ActiveRecord: 31.0ms | Allocations: 18770)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:39:19 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 73.7ms | ActiveRecord: 2.8ms | Allocations: 19756)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:39:32 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (26.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 97.2ms | ActiveRecord: 28.0ms | Allocations: 19261)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:39:47 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 81.4ms | ActiveRecord: 1.1ms | Allocations: 20136)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:39:59 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (22.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 121ms (Views: 91.3ms | ActiveRecord: 23.2ms | Allocations: 19710)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:40:15 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 78.6ms | ActiveRecord: 0.8ms | Allocations: 19692)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:40:22 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 100ms (Views: 90.2ms | ActiveRecord: 1.3ms | Allocations: 19665)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:40:29 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (24.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 135ms (Views: 101.0ms | ActiveRecord: 25.1ms | Allocations: 19705)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:40:42 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 120ms (Views: 108.9ms | ActiveRecord: 1.7ms | Allocations: 18832)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:42:18 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 56.0ms | ActiveRecord: 0.7ms | Allocations: 19675)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:44:19 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1363)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: 445ec197fc9c0cd06c0c
+Version: webpack 4.41.2
+Time: 2030ms
+Built at: 12/01/2019 4:44:24 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-0659a978c0d30b4adb3a.js  3.94 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-0659a978c0d30b4adb3a.js.map  3.65 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-0659a978c0d30b4adb3a.js js/navbar-0659a978c0d30b4adb3a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 74 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4881ms (Views: 4873.3ms | ActiveRecord: 0.9ms | Allocations: 13771)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:44:38 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1214)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: c9630b2661270ba78de3
+Version: webpack 4.41.2
+Time: 1667ms
+Built at: 12/01/2019 4:44:42 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-05c89bb4d0db3f65a044.js  3.94 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-05c89bb4d0db3f65a044.js.map  3.65 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-05c89bb4d0db3f65a044.js js/navbar-05c89bb4d0db3f65a044.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 73 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3777ms (Views: 3769.8ms | ActiveRecord: 0.7ms | Allocations: 11985)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:47:56 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (27.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1215)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/eden/originalProject/GAProject4/othrwrld/public/packs
+[Webpacker] Hash: 432e6ca80d187744f179
+Version: webpack 4.41.2
+Time: 1626ms
+Built at: 12/01/2019 4:47:59 PM
+                                      Asset      Size        Chunks                         Chunk Names
+             js/app-630f4a7f389b92ab74d7.js   160 KiB           app  [emitted] [immutable]  app
+         js/app-630f4a7f389b92ab74d7.js.map   165 KiB           app  [emitted] [dev]        app
+     js/application-f720b24022283010ae5a.js  70.8 KiB   application  [emitted] [immutable]  application
+ js/application-f720b24022283010ae5a.js.map  80.2 KiB   application  [emitted] [dev]        application
+    js/d3Graph/test-835e2df6b59f19a86db9.js   5.9 KiB  d3Graph/test  [emitted] [immutable]  d3Graph/test
+js/d3Graph/test-835e2df6b59f19a86db9.js.map  6.33 KiB  d3Graph/test  [emitted] [dev]        d3Graph/test
+     js/hello_react-79d8d07cfde08d63ecfe.js  1.26 MiB   hello_react  [emitted] [immutable]  hello_react
+ js/hello_react-79d8d07cfde08d63ecfe.js.map  1.44 MiB   hello_react  [emitted] [dev]        hello_react
+          js/navbar-61a821ced588ee160639.js  4.11 KiB        navbar  [emitted] [immutable]  navbar
+      js/navbar-61a821ced588ee160639.js.map  3.84 KiB        navbar  [emitted] [dev]        navbar
+                              manifest.json   1.6 KiB                [emitted]              
+Entrypoint app = js/app-630f4a7f389b92ab74d7.js js/app-630f4a7f389b92ab74d7.js.map
+Entrypoint application = js/application-f720b24022283010ae5a.js js/application-f720b24022283010ae5a.js.map
+Entrypoint d3Graph/test = js/d3Graph/test-835e2df6b59f19a86db9.js js/d3Graph/test-835e2df6b59f19a86db9.js.map
+Entrypoint hello_react = js/hello_react-79d8d07cfde08d63ecfe.js js/hello_react-79d8d07cfde08d63ecfe.js.map
+Entrypoint navbar = js/navbar-61a821ced588ee160639.js js/navbar-61a821ced588ee160639.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.61 KiB {app} {hello_react} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/d3Graph/test.js] 2 KiB {d3Graph/test} [built]
+[./app/javascript/packs/hello_react.jsx] 1020 bytes {hello_react} [built]
+[./app/javascript/packs/navbar.js] 244 bytes {navbar} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {app} {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 50 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3302ms (Views: 3266.4ms | ActiveRecord: 27.7ms | Allocations: 20981)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:48:00 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 53.5ms | ActiveRecord: 0.9ms | Allocations: 10645)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:48:02 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (25.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 26.6ms | ActiveRecord: 26.5ms | Allocations: 10635)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:48:03 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (22.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 40.1ms | ActiveRecord: 23.1ms | Allocations: 10646)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:48:04 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 53.5ms | ActiveRecord: 0.7ms | Allocations: 10639)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:48:05 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 41.0ms | ActiveRecord: 0.6ms | Allocations: 10635)
+
+
+Started GET "/" for ::1 at 2019-12-01 16:48:07 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 39.0ms | ActiveRecord: 2.6ms | Allocations: 10635)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:01:26 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 146ms (Views: 120.2ms | ActiveRecord: 4.5ms | Allocations: 20233)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:08:41 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 90.9ms | Allocations: 10323)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 147ms (Views: 125.6ms | ActiveRecord: 3.2ms | Allocations: 19789)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:09:23 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (25.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 27.4ms | Allocations: 10725)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 45.5ms | ActiveRecord: 25.6ms | Allocations: 20061)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:09:34 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 38.1ms | Allocations: 10741)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 72.6ms | ActiveRecord: 1.6ms | Allocations: 20204)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:09:52 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 54.8ms | Allocations: 10280)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 95.5ms | ActiveRecord: 2.7ms | Allocations: 19736)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:10:11 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (25.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1922)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 100ms (Views: 63.2ms | ActiveRecord: 27.6ms | Allocations: 12444)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:15:20 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 38.6ms | Allocations: 9404)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 86.8ms | ActiveRecord: 1.3ms | Allocations: 18742)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:15:27 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (9.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (30.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1786)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 52.1ms | ActiveRecord: 39.6ms | Allocations: 11116)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:15:45 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (21.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (9.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 66.3ms | Allocations: 11143)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 178ms (Views: 134.8ms | ActiveRecord: 31.0ms | Allocations: 20474)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:16:36 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (22.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 16.7ms | Allocations: 1211)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 213ms (Views: 166.9ms | ActiveRecord: 24.4ms | Allocations: 19747)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:17:02 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1211)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 93.2ms | ActiveRecord: 1.3ms | Allocations: 18894)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:18:20 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 50.2ms | Allocations: 10324)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 90.5ms | ActiveRecord: 4.3ms | Allocations: 20103)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:18:38 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 34.6ms | Allocations: 10733)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 68.5ms | ActiveRecord: 1.4ms | Allocations: 20063)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:19:14 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 31.1ms | Allocations: 11152)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 56.1ms | ActiveRecord: 1.4ms | Allocations: 20488)
+
+
+Started GET "/" for ::1 at 2019-12-01 18:21:45 +0800
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:3:in `index'
+  [1m[36mUser Load (20.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/homes_controller.rb:5:in `index'
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1212)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 23.8ms | ActiveRecord: 20.9ms | Allocations: 10641)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 18:21:47 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (2.0ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1170)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 30.8ms | ActiveRecord: 2.5ms | Allocations: 11382)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 18:21:50 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.9ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 913)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 1.3ms | Allocations: 10444)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 18:21:51 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (0.7ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 913)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 1.2ms | Allocations: 10446)
+
+
+Started GET "/universes" for ::1 at 2019-12-01 18:29:17 +0800
+Processing by UniversesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering universes/index.html.erb within layouts/application
+  [1m[36mUniverse Load (1.2ms)[0m  [1m[34mSELECT "universes".* FROM "universes"[0m
+  ↳ app/views/universes/index.html.erb:16
+  Rendered universes/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 913)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 56.3ms | ActiveRecord: 3.2ms | Allocations: 19231)
+
+
