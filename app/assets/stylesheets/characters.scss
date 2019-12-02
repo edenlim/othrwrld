@@ -1,3 +1,46 @@
 // Place all the styles related to the Characters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body{
+	background-color: #161616;
+}
+
+p{
+	color: white;
+}
+
+.show{
+	padding: 30px;
+}
+
+.show a{
+	text-shadow: 0 0 20px #005bff,0 0 20px #5bff00,0 0 20px #005bff;
+}
+
+h1{
+	color: white;
+}
+
+ul{
+	color: white;
+}
+
+.name{
+	font-size: 40px;
+	display: block;
+}
+
+.contain{
+	border: 2px solid white;
+	text-align: center;
+	box-shadow: 0 0 10px white;
+	margin: 20px auto;
+	border-radius: 5px;
+}
+
+span{
+	text-align: center;
+	display: block;
+	margin: 20px auto;
+}

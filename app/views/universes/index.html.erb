@@ -1,33 +1,33 @@
+<div class="show">
+	<div class="headerText">
+		<h1>UNIVERSES</h1>
+	</div>
 
-<div class="headerText">
-	<h1>UNIVERSES</h1>
-</div>
-
-<div class="tableDiv">
-	<table>
-		<thead>
-			<tr>
-				<th>Name</th>
-				<th>Description</th>
-				<th colspan="3"></th>
-			</tr>
-		</thead>
-
-		<tbody>
-			<% @universes.each do |universe| %>
+	<div class="tableDiv">
+		<table>
+			<thead>
 				<tr>
-					<td><%= universe.name %></td>
-					<td><%= universe.description %></td>
-					<td class="linkButton"><%= link_to 'Show', universe %></td>
-	        <td class="linkButton"><%= link_to 'Edit', edit_universe_path(universe) %></td>
-	        <td class="linkButton"><%= link_to 'Destroy', universe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+					<th>Name</th>
+					<th>Description</th>
+					<th colspan="3"></th>
 				</tr>
-			<% end %>
-		</tbody>
-	</table>
+			</thead>
+
+			<tbody>
+				<% @universes.each do |universe| %>
+					<tr>
+						<td><%= universe.name %></td>
+						<td><%= universe.description %></td>
+						<td class="linkButton"><%= link_to 'Show', universe %></td>
+		        <td class="linkButton"><%= link_to 'Edit', edit_universe_path(universe) %></td>
+		        <td class="linkButton"><%= link_to 'Destroy', universe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="createNew"><%= link_to 'New Universe', new_universe_path %></div>
 </div>
-
-<div class="createNew"><%= link_to 'New Universe', new_universe_path %></div>
-
 
 <%= stylesheet_link_tag 'template' %>

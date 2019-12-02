@@ -53,7 +53,7 @@ class CharactersController < ApplicationController
   # POST /characters
   # POST /characters.json
   def create
-    @character = Character.new(character_params.merge(user_id: current_user.id, qualities: '{"Hair": "Red"}'))
+    @character = Character.new(character_params.merge(user_id: current_user.id, qualities: '{}'))
 
     respond_to do |format|
       if @character.save

@@ -18,16 +18,16 @@ li, a {
 
 @keyframes pulse{
 	0%{
-		text-shadow: 0 0 40px #ff005b;
+		text-shadow: 0 0 20px #ff005b,0 0 40px #ff005b;
 	}
 	33%{
-		text-shadow: 0 0 40px #5bff00;
+		text-shadow: 0 0 20px #5bff00,0 0 40px #5bff00;
 	}
 	66%{
-		text-shadow: 0 0 40px #005bff;
+		text-shadow: 0 0 20px #005bff,0 0 40px #005bff;
 	}
 	100%{
-		text-shadow: 0 0 40px #ff005b;
+		text-shadow: 0 0 20px #ff005b,0 0 40px #ff005b;
 	}
 }
 
@@ -45,6 +45,7 @@ header{
 
 .navbrand{
 	margin-right: auto;
+
 }
 
 .navbrand a{

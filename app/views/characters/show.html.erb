@@ -1,37 +1,40 @@
-<%= link_to 'Edit', edit_character_path(@character) %> |
-<%= link_to 'Back', characters_path %>
+<div class="show">
+	<%= link_to 'Edit', edit_character_path(@character) %> |
+	<%= link_to 'Back', characters_path %>
 
 
-<p>
-  <strong>Name:</strong>
-  <%= @character.name %>
-</p>
+	<h1 class="name"><%= @character.name %></h1>
 
-<p>
-  <strong>Story:</strong>
-  <% @character.story.each do |story| %>
-  <p><%= story.name %></p>
-  <% end %>
+	<div class="contain">
+	  <h1><strong>Stories</strong></h1>
+	  <% @character.story.each do |story| %>
+	  <p><%= story.name %></p>
+	  <% end %>
+	</div>
 
-</p>
+	<div class="contain">
+	  <h1><strong>Qualities:</strong></h1>
+	  <% @qualities.each do |key,value| %>
+	  	<p><%=key%>: <%=value%></p>
+	  <% end %>
+	</div>
 
-<p>
-  <strong>Qualities:</strong>
-  <% @qualities.each do |key,value| %>
-  	<p><%=key%>: <%=value%></p>
-  <% end %>
-</p>
+	<div class="contain">
+		<h1><strong>Relationships:</strong></h1>
+		<% @characters.each do |key,value| %>
+			<p><%=key%>: <%= value.affiliation %>
+			<%=link_to 'Destroy', "/characters/deleteAffiliation/#{value.id}" , method: :delete, data: { confirm: 'Are you sure?' }%>
+			</p>
+		<% end %>
+		<span><%= link_to 'Add relationship', add_relation_path %></span>
+	</div>
 
-<p>
-	<strong>Relationships:</strong>
-	<% @characters.each do |key,value| %>
-		<p><%=key%>: <%= value.affiliation %></p>
-		<%=link_to 'Destroy', "/characters/deleteAffiliation/#{value.id}" , method: :delete, data: { confirm: 'Are you sure?' }%>
-	<% end %>
-</p>
-<div>
-	<%= javascript_pack_tag 'hello_react' %>
-	<%= javascript_pack_tag 'd3Graph/test.js' %>
+	<div>
+		<%= javascript_pack_tag 'hello_react' %>
+		<%= javascript_pack_tag 'd3Graph/test.js' %>
+	</div>
+	<br/>
+
+
 </div>
-<br/>
-<%= link_to 'Add relationship', add_relation_path %>
+<%= stylesheet_link_tag 'characters' %>

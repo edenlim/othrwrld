@@ -1,37 +1,38 @@
+<div class="show">
+	<div class="headerText">
+		<h1>STORIES</h1>
+	</div>
 
-<div class="headerText">
-	<h1>STORIES</h1>
+	<div class="tableDiv">
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Name</th>
+	      <th>Universe</th>
+	      <th>Genre</th>
+	      <th>Summary</th>
+	      <th colspan="3"></th>
+	    </tr>
+	  </thead>
+
+	  <tbody>
+	    <% @stories.each do |story| %>
+	      <tr>
+	        <td><%= story.name %></td>
+	        <td><%= story.universe.name %></td>
+	        <td><%= story.genre.name %></td>
+	        <td><%= story.summary %></td>
+	        <td class="linkButton"><%= link_to 'Show', story %></td>
+	        <td class="linkButton"><%= link_to 'Edit', edit_story_path(story) %></td>
+	        <td class="linkButton"><%= link_to 'Destroy', story, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	      </tr>
+	    <% end %>
+	  </tbody>
+	</table>
+	</div>
+
+	<br>
+
+	<div class="createNew"><%= link_to 'New Story', new_story_path %></div>
 </div>
-
-<div class="tableDiv">
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Universe</th>
-      <th>Genre</th>
-      <th>Summary</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @stories.each do |story| %>
-      <tr>
-        <td><%= story.name %></td>
-        <td><%= story.universe.name %></td>
-        <td><%= story.genre.name %></td>
-        <td><%= story.summary %></td>
-        <td class="linkButton"><%= link_to 'Show', story %></td>
-        <td class="linkButton"><%= link_to 'Edit', edit_story_path(story) %></td>
-        <td class="linkButton"><%= link_to 'Destroy', story, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-</div>
-
-<br>
-
-<div class="createNew"><%= link_to 'New Story', new_story_path %></div>
 <%= stylesheet_link_tag 'template' %>
