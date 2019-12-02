@@ -1,32 +1,36 @@
-<p id="notice"><%= notice %></p>
+<div class="glitchDiv">
+	<h1 class="glitch" data-text="<%= @story.name %>">
+	  <%= @story.name %>
+	</h1>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @story.name %>
-</p>
+<div class="mainBody">
+	<p>
+	  <strong>Universe:</strong>
+	  <%= @story.universe.name %>
+	</p>
 
-<p>
-  <strong>Universe:</strong>
-  <%= @story.universe.name %>
-</p>
+	<p>
+	  <strong>Genre:</strong>
+	  <%= @story.genre.name %>
+	</p>
 
-<p>
-  <strong>Genre:</strong>
-  <%= @story.genre %>
-</p>
+	<p>
+	  <strong>Summary:</strong>
+	  <%= @story.summary %>
+	</p>
 
-<p>
-  <strong>Summary:</strong>
-  <%= @story.summary %>
-</p>
+	<p>
+	  <strong>Characters:</strong>
+	  <% @story.character.each do |character| %>
+	  <p><%= character.name %></p>
+	  <% end %>
+	</p>
 
-<p>
-  <strong>Characters:</strong>
-  <% @story.character.each do |character| %>
-  <p><%= character.name %></p>
-  <% end %>
-</p>
-
+	<% if @story.genre.name == "Sci-fi" %>
+		<%= stylesheet_link_tag 'scifi' %>
+	<% end %>
+</div>
 
 
 <%= link_to 'Edit', edit_story_path(@story) %> |

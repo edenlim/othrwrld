@@ -1,0 +1,14 @@
+<h1><%= @character.name %> </h1>
+
+<%= form_with scope: :character, url: create_Relation_path, local: true do |form| %>
+
+	<%= form.collection_select :character_id, @notRelated, :id, :name %>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+<%= @notRelated.inspect %>
+
+
+<%= link_to "Back", characters_path %>

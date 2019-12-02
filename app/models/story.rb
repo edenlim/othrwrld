@@ -4,4 +4,5 @@ class Story < ApplicationRecord
   has_many :stories_note
   belongs_to :universe
   belongs_to :user
+  belongs_to :genre
 end

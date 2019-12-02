@@ -53,7 +53,6 @@ class CharactersController < ApplicationController
   # POST /characters
   # POST /characters.json
   def create
-
     @character = Character.new(character_params.merge(user_id: current_user.id, qualities: '{"Hair": "Red"}'))
 
     respond_to do |format|
@@ -90,10 +89,20 @@ class CharactersController < ApplicationController
     # end
   end
 
+  def addRelation
+    @character = Character.find(params[:id])
+    @notRelated = @character.notRelated
+  end
+
+  def createRelation
+    render plain: params
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_character
       @character = Character.find(params[:id])
+
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

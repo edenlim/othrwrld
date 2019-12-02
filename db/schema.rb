@@ -10,21 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_30_092415) do
+ActiveRecord::Schema.define(version: 2019_12_02_012523) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "character_stories", force: :cascade do |t|
-    t.bigint "character_id"
-    t.bigint "story_id"
-    t.integer "importance"
-    t.string "notes"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["character_id"], name: "index_character_stories_on_character_id"
-    t.index ["story_id"], name: "index_character_stories_on_story_id"
-  end
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
@@ -46,6 +35,12 @@ ActiveRecord::Schema.define(version: 2019_11_30_092415) do
     t.index ["story_id"], name: "index_characters_stories_on_story_id"
   end
 
+  create_table "genres", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "relationships", force: :cascade do |t|
     t.integer "character_id"
     t.integer "character2"
@@ -65,11 +60,12 @@ ActiveRecord::Schema.define(version: 2019_11_30_092415) do
   create_table "stories", force: :cascade do |t|
     t.string "name"
     t.bigint "universe_id"
-    t.string "genre"
+    t.bigint "genre_id"
     t.string "summary"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["genre_id"], name: "index_stories_on_genre_id"
     t.index ["universe_id"], name: "index_stories_on_universe_id"
     t.index ["user_id"], name: "index_stories_on_user_id"
   end

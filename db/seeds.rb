@@ -22,9 +22,7 @@ Relationship.create(character_id: 2, character2: 3, affiliation: "Friend")
 Relationship.create(character_id: 2, character2: 5, affiliation: "Couple")
 Relationship.create(character_id: 3, character2: 5, affiliation: "Friend")
 
-Story.create(name: "The Lorems", universe_id: 1, genre: "Romance", summary: "Funny Romance story about a group of kids",user_id: 1)
-Story.create(name: "Bananas", universe_id: 1, genre: "Horror", summary: "A mind-controlling virus called Banana is spreading across the world",user_id: 1)
-Story.create(name: "General Assembly", universe_id: 1, genre: "Sci-fi", summary: "An alternative world where Coders conquered the world and everyone is enlisted to code",user_id: 1)
+
 
 CharactersStory.create(character_id: 1, story_id: 1, importance: 1, notes: "Not important")
 CharactersStory.create(character_id: 1, story_id: 2, importance: 1, notes: "Not important")
@@ -34,3 +32,12 @@ CharactersStory.create(character_id: 3, story_id: 2, importance: 5, notes: "Very
 CharactersStory.create(character_id: 4, story_id: 1, importance: 5, notes: "Very little important")
 CharactersStory.create(character_id: 4, story_id: 2, importance: 2, notes: "A little important")
 CharactersStory.create(character_id: 5, story_id: 2, importance: 5, notes: "Very important")
+
+Genre.create(name: "Sci-fi")
+Genre.create(name: "Comedy")
+Genre.create(name: "Romance")
+Genre.create(name: "Horror")
+
+Story.create(name: "The Lorems", universe_id: 1, genre_id: 3, summary: "Funny Romance story about a group of kids",user_id: 1)
+Story.create(name: "Bananas", universe_id: 1, genre_id: 4, summary: "A mind-controlling virus called Banana is spreading across the world",user_id: 1)
+Story.create(name: "General Assembly", universe_id: 1, genre_id: 1, summary: "An alternative world where Coders conquered the world and everyone is enlisted to code",user_id: 1)

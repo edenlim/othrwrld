@@ -1,7 +1,9 @@
 
+<div class="headerText">
+	<h1>CHARACTERS</h1>
+</div>
 
-<h1>Characters</h1>
-
+<div class="tableDiv">
 <table>
   <thead>
     <tr>
@@ -14,14 +16,15 @@
     <% @characters.each do |character| %>
       <tr>
         <td><%= character.name %></td>
-        <td><%= link_to 'Show', character %></td>
-        <td><%= link_to 'Edit', edit_character_path(character) %></td>
-        <td><%= link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="linkButton"><%= link_to 'Show', character %></td>
+        <td class="linkButton"><%= link_to 'Edit', edit_character_path(character) %></td>
+        <td class="linkButton"><%= link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
 
-<br>
+<div class="createNew"><%= link_to 'New Character', new_character_path %></div>
+
 <%= stylesheet_link_tag 'template' %>
-<%= link_to 'New Character', new_character_path %>

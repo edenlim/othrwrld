@@ -18,6 +18,7 @@ class StoriesController < ApplicationController
   def new
     # @story = Story.new
     @universes = Universe.all
+    @genres = Genre.all
     @user_id = current_user.id
   end
 
@@ -25,7 +26,7 @@ class StoriesController < ApplicationController
   def edit
     @story = Story.find(params[:id])
     @universes = Universe.all
-
+    @genres = Genre.all
   end
 
   # POST /stories
@@ -69,6 +70,6 @@ class StoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def story_params
-      params.require(:story).permit(:name, :universe_id, :genre, :summary, :user_id)
+      params.require(:story).permit(:name, :universe_id, :genre_id, :summary, :user_id)
     end
 end

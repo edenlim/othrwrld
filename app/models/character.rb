@@ -1,3 +1,5 @@
+require 'set'
+
 class Character < ApplicationRecord
   has_and_belongs_to_many :story
   belongs_to :user
@@ -17,7 +19,7 @@ class Character < ApplicationRecord
 
     @relationship.each do |relation|
       @character = Character.where(id: relation.character_id)[0]
-      puts "sdaasdasd",@character_id
+
       charName = @character.name.to_s
       if charName == self.name
         @character = Character.where(id: relation.character2)[0]
@@ -31,5 +33,16 @@ class Character < ApplicationRecord
       end
     end
     return relationHash
+  end
+
+  def notRelated
+    @relationship = characterRelationship.keys
+    @allCharacters = Character.where.not(id: self.id)
+    @notRelated = @allCharacters.select do |x|
+      puts '//////////'
+      puts x.inspect
+      !@relationship.include?(x.name)
+    end
+    return @notRelated
   end
 end

@@ -2,17 +2,15 @@
 
 <%= form_with scope: :story, model: @story, local: true do |form| %>
 
-	<%= form.collection_select :universe_id, @universes, :id, :name %>
+	<%= form.collection_select :universe_id, @universes, :id, :name %> <br/>
+	<%= form.collection_select :genre_id, @genres, :id, :name %>
 
 	<p>
     <%= form.label :name %><br>
     <%= form.text_field :name %>
   </p>
 
-  <p>
-    <%= form.label :genre %><br>
-    <%= form.text_area :genre %>
-  </p>
+
 
   <p>
     <%= form.label :summary %><br>
