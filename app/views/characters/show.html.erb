@@ -17,6 +17,7 @@
 	  <% @qualities.each do |key,value| %>
 	  	<p><%=key%>: <%=value%></p>
 	  <% end %>
+	  <%= @qualities %>
 	</div>
 
 	<div class="contain">
@@ -26,7 +27,7 @@
 			<%=link_to 'Destroy', "/characters/deleteAffiliation/#{value.id}" , method: :delete, data: { confirm: 'Are you sure?' }%>
 			</p>
 		<% end %>
-		<span><%= link_to 'Add relationship', add_relation_path %></span>
+		<span class="add"><%= link_to 'Add relationship', add_relation_path %></span>
 	</div>
 
 	<div>

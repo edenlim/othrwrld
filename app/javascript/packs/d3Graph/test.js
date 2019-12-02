@@ -1,5 +1,98 @@
 console.log("WORKINGS")
 
+var graph = {
+  "nodes": [
+    {
+      "id": 1,
+      "name": "A"
+    },
+    {
+      "id": 2,
+      "name": "B"
+    },
+    {
+      "id": 3,
+      "name": "C"
+    },
+    {
+      "id": 4,
+      "name": "D"
+    },
+    {
+      "id": 5,
+      "name": "E"
+    },
+    {
+      "id": 6,
+      "name": "F"
+    },
+    {
+      "id": 7,
+      "name": "G"
+    },
+    {
+      "id": 8,
+      "name": "H"
+    },
+    {
+      "id": 9,
+      "name": "I"
+    },
+    {
+      "id": 10,
+      "name": "J"
+    }
+  ],
+  "links": [
+
+    {
+      "source_id": 1,
+      "target_id": 2
+    },
+    {
+      "source_id": 1,
+      "target_id": 5
+    },
+    {
+      "source_id": 1,
+      "target_id": 6
+    },
+
+    {
+      "source_id": 2,
+      "target_id": 3
+    },
+            {
+      "source_id": 2,
+      "target_id": 7
+    }
+    ,
+
+    {
+      "source_id": 3,
+      "target_id": 4
+    },
+     {
+      "source_id": 8,
+      "target_id": 3
+    }
+    ,
+    {
+      "source_id": 4,
+      "target_id": 5
+    }
+    ,
+
+    {
+      "source_id": 4,
+      "target_id": 9
+    },
+    {
+      "source_id": 5,
+      "target_id": 10
+    }
+  ]
+}
 
 var svg = d3.select("body").append('svg'),
     width = +svg.attr("width"),
@@ -11,8 +104,8 @@ var simulation = d3.forceSimulation()
     .force("center", d3.forceCenter(width / 2, height / 2));
 
 
-d3.json("../test", function(error, graph) {
-  if (error) throw error;
+//d3.json(jsonvar, function(error, graph) {
+  //if (error) throw error;
 
   graph.links.forEach(function(d){
     d.source = d.source_id;
@@ -71,7 +164,7 @@ d3.json("../test", function(error, graph) {
             .attr("y", function (d) { return d.y; })
             .style("font-size", "20px").style("fill", "#4393c3");
   }
-});
+//});
 
 function dragstarted(d) {
   if (!d3.event.active) simulation.alphaTarget(0.3).restart()
