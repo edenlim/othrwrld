@@ -23,12 +23,12 @@ class Character < ApplicationRecord
       charName = @character.name.to_s
       if charName == self.name
         @character = Character.where(id: relation.character2)[0]
-        @relation = relation.affiliation
+        @relation = relation
         charName = @character.name.to_s
         relationHash[charName] = @relation
       elsif charName != self.name
 
-        @relation = relation.affiliation
+        @relation = relation
         relationHash[charName] = @relation
       end
     end
@@ -39,8 +39,6 @@ class Character < ApplicationRecord
     @relationship = characterRelationship.keys
     @allCharacters = Character.where.not(id: self.id)
     @notRelated = @allCharacters.select do |x|
-      puts '//////////'
-      puts x.inspect
       !@relationship.include?(x.name)
     end
     return @notRelated

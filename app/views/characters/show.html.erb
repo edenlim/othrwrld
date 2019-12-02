@@ -25,7 +25,8 @@
 <p>
 	<strong>Relationships:</strong>
 	<% @characters.each do |key,value| %>
-		<p><%=key%>: <%= value %></p>
+		<p><%=key%>: <%= value.affiliation %></p>
+		<%=link_to 'Destroy', "/characters/deleteAffiliation/#{value.id}" , method: :delete, data: { confirm: 'Are you sure?' }%>
 	<% end %>
 </p>
 <div>

@@ -35557,3 +35557,1819 @@ Processing by CharactersController#createRelation as HTML
 Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 0.8ms | Allocations: 2296)
 
 
+Started GET "/characters/1" for ::1 at 2019-12-02 13:31:04 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (1.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:104:in `set_character'
+  [1m[36mRelationship Load (2.3ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (2.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 121.6ms | Allocations: 16824)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 308ms (Views: 128.1ms | ActiveRecord: 46.2ms | Allocations: 51235)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:31:06 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 2.7ms | Allocations: 2264)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:31:08 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (1.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.8ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (1.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 1.6ms | Allocations: 491)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 25.6ms | ActiveRecord: 5.2ms | Allocations: 15289)
+
+
+Started POST "/characters/1" for ::1 at 2019-12-02 13:31:11 +0800
+Processing by CharactersController#createRelation as HTML
+  Parameters: {"authenticity_token"=>"1TwR5njF5S6/0xM5/5XdAO5rFBpMfVrWecgQ0UklxF+ANePma0JPEdgIk2kq/JB9T4QCNUK892CwMf0OIp4UxQ==", "character"=>{"character_id"=>"3"}, "commit"=>"Save Character", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 2321)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:31:14 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 1.5ms | Allocations: 456)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 26.3ms | ActiveRecord: 3.7ms | Allocations: 15226)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:32:22 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.7ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1100)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 59.3ms | ActiveRecord: 4.6ms | Allocations: 17025)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:33:41 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1106)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 28.3ms | ActiveRecord: 26.1ms | Allocations: 38035)
+
+
+Started POST "/characters/1" for ::1 at 2019-12-02 13:33:58 +0800
+Processing by CharactersController#createRelation as HTML
+  Parameters: {"authenticity_token"=>"0k5A14wHj8SgCHIGsBI9qb0mLraHSPO11uDx/AcuzfmHR7LXn4Al+8fT8lZle3DUHMk4mYmJXgMfGRwjbJUdYw==", "character"=>{"character_id"=>"3", "affiliation"=>"cousin friend"}, "commit"=>"Save Character", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 0.7ms | Allocations: 2328)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:34:04 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:104:in `set_character'
+  [1m[36mRelationship Load (0.8ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (1.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (1.6ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 58.9ms | Allocations: 16839)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 107ms (Views: 68.5ms | ActiveRecord: 17.6ms | Allocations: 30752)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:34:05 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 2139)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:34:22 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (1.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 2.3ms | Allocations: 673)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 27.1ms | ActiveRecord: 4.4ms | Allocations: 15446)
+
+
+Started POST "/characters/1" for ::1 at 2019-12-02 13:34:43 +0800
+Processing by CharactersController#createRelation as HTML
+  Parameters: {"authenticity_token"=>"0H3Ij64lglADkKFIhK0DzyVTyDs8Gjed7tyZedbHDxSFdDqPvaIob2RLIRhRxE6yhLzeFDLbmisnJXSmvXzfjg==", "character"=>{"character_id"=>"3", "affiliation"=>"dfgh"}, "commit"=>"Save Character", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 2338)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:35:41 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:105:in `set_character'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 65.1ms | Allocations: 16367)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 183ms (Views: 88.2ms | ActiveRecord: 33.4ms | Allocations: 51228)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:35:42 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 2139)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:35:44 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (1.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 2.3ms | Allocations: 859)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 25.8ms | ActiveRecord: 4.1ms | Allocations: 15637)
+
+
+Started POST "/characters/1" for ::1 at 2019-12-02 13:35:47 +0800
+Processing by CharactersController#createRelation as HTML
+  Parameters: {"authenticity_token"=>"CHNXYJb5vrswtqGJmzXw/g3YZiVOUox9T/5Efpf3W4pdeqVghX4UhFdtIdlOXL2DrDdwCkCTIcuGB6mh/EyLEA==", "character"=>{"character_id"=>"3", "affiliation"=>"cousin friend"}, "commit"=>"Save Character", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 0.4ms | Allocations: 51931)
+
+
+  
+NoMethodError (undefined method `id' for #<CharactersController:0x00007f9921153c10>):
+  
+app/controllers/characters_controller.rb:98:in `createRelation'
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:35:49 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (1.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 1.9ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 27.6ms | ActiveRecord: 4.5ms | Allocations: 15446)
+
+
+Started POST "/characters/1" for ::1 at 2019-12-02 13:36:09 +0800
+Processing by CharactersController#createRelation as HTML
+  Parameters: {"authenticity_token"=>"QRWZZNrRXiE7SRvea/TWqRDFnfRsg5gDzWMxaGfBBPEUHGtkyVb0HlySm46+nZvUsSqL22JCNbUEmty3DHrUaw==", "character"=>{"character_id"=>"3", "affiliation"=>"cousin friend"}, "commit"=>"Save Character", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:98:in `createRelation'
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 13.1ms | Allocations: 68704)
+
+
+  
+NoMethodError (undefined method `id' for #<CharactersController:0x00007f991ca994a0>):
+  
+app/controllers/characters_controller.rb:99:in `createRelation'
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:36:13 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 1.8ms | Allocations: 867)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 20.5ms | ActiveRecord: 9.9ms | Allocations: 24644)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:36:14 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.6ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (3.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 2.0ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 28.9ms | ActiveRecord: 5.9ms | Allocations: 15449)
+
+
+Started POST "/characters/1" for ::1 at 2019-12-02 13:36:17 +0800
+Processing by CharactersController#createRelation as HTML
+  Parameters: {"authenticity_token"=>"m4mhem8/UzOtgg5yUeK53PLLuaOCZ/4Xs+xoDz40ueTOgFN6fLj5DMpZjiKEi/ShUySvjIymU6F6FYXQVY9pfg==", "character"=>{"character_id"=>"3", "affiliation"=>"sdasad"}, "commit"=>"Save Character", "id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:98:in `createRelation'
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 2.3ms | Allocations: 52522)
+
+
+  
+NoMethodError (undefined method `id' for #<CharactersController:0x00007f991cb605a0>):
+  
+app/controllers/characters_controller.rb:99:in `createRelation'
+Started POST "/characters/1" for ::1 at 2019-12-02 13:36:25 +0800
+Processing by CharactersController#createRelation as HTML
+  Parameters: {"authenticity_token"=>"m4mhem8/UzOtgg5yUeK53PLLuaOCZ/4Xs+xoDz40ueTOgFN6fLj5DMpZjiKEi/ShUySvjIymU6F6FYXQVY9pfg==", "character"=>{"character_id"=>"3", "affiliation"=>"sdasad"}, "commit"=>"Save Character", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:98:in `createRelation'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 96ms (Views: 1.1ms | ActiveRecord: 21.6ms | Allocations: 19191)
+
+
+Started POST "/characters/1" for ::1 at 2019-12-02 13:37:08 +0800
+Processing by CharactersController#createRelation as HTML
+  Parameters: {"authenticity_token"=>"m4mhem8/UzOtgg5yUeK53PLLuaOCZ/4Xs+xoDz40ueTOgFN6fLj5DMpZjiKEi/ShUySvjIymU6F6FYXQVY9pfg==", "character"=>{"character_id"=>"3", "affiliation"=>"sdasad"}, "commit"=>"Save Character", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:98:in `createRelation'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 2)
+Completed 200 OK in 119ms (Views: 3.4ms | ActiveRecord: 31.8ms | Allocations: 19274)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:37:11 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.7ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 2.6ms | Allocations: 867)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 24.7ms | ActiveRecord: 11.0ms | Allocations: 20381)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:37:13 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.6ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 2.0ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 23.2ms | ActiveRecord: 2.9ms | Allocations: 15448)
+
+
+Started POST "/characters/1" for ::1 at 2019-12-02 13:37:16 +0800
+Processing by CharactersController#createRelation as HTML
+  Parameters: {"authenticity_token"=>"IQvASjCxvRmytIpk8dTyM+sHz1bAPeIol1mynMJYeyF0AjJKIzYXJtVvCjQkvb9OSujZec78T55eoF9DqeOruw==", "character"=>{"character_id"=>"3", "affiliation"=>"dasdas"}, "commit"=>"Save Character", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:98:in `createRelation'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.9ms | Allocations: 2932)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:37:33 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:106:in `set_character'
+  [1m[36mRelationship Load (1.0ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (1.1ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 72.5ms | Allocations: 16409)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 243ms (Views: 89.4ms | ActiveRecord: 55.5ms | Allocations: 51292)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:37:35 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 3.4ms | Allocations: 2140)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:37:37 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (1.0ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 2.6ms | Allocations: 859)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 25.8ms | ActiveRecord: 3.7ms | Allocations: 15628)
+
+
+Started POST "/characters/1" for ::1 at 2019-12-02 13:37:40 +0800
+Processing by CharactersController#createRelation as HTML
+  Parameters: {"authenticity_token"=>"GyC1sMVwGwoZx6W/DsNtaUuiPRWOHPlJTW/U3iQ2pbxOKUew1vexNX4cJe/bqiAU6k0rOoDdVP+EljkBT411Jg==", "character"=>{"character_id"=>"3", "affiliation"=>"asdsad"}, "commit"=>"Save Character", "id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:98:in `createRelation'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 1.2ms | Allocations: 2900)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:39:44 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 1.7ms | Allocations: 867)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 22.0ms | ActiveRecord: 20.4ms | Allocations: 36710)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:39:46 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.6ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 1.4ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 22.5ms | ActiveRecord: 2.6ms | Allocations: 15441)
+
+
+Started POST "/characters/1" for ::1 at 2019-12-02 13:39:50 +0800
+Processing by CharactersController#createRelation as HTML
+  Parameters: {"authenticity_token"=>"QR1Ik5y0AhbslDFFpbj1zI7+Pl1k8SdXzpHo4lguxwsUFLqTjzOoKYtPsRVw0bixLxEocmowiuEHaAU9M5UXkQ==", "character"=>{"character_id"=>"3", "affiliation"=>"cousin friend"}, "commit"=>"Save Character", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:98:in `createRelation'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/characters_controller.rb:105:in `block in createRelation'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:105:in `block in createRelation'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:105:in `block in createRelation'
+  [1m[36mRelationship Create (0.9ms)[0m  [1m[32mINSERT INTO "relationships" ("character_id", "character2", "affiliation", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["character_id", 3], ["character2", 1], ["affiliation", "cousin friend"], ["created_at", "2019-12-02 05:39:50.349871"], ["updated_at", "2019-12-02 05:39:50.349871"]]
+  ↳ app/controllers/characters_controller.rb:105:in `block in createRelation'
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/characters_controller.rb:105:in `block in createRelation'
+Redirected to http://localhost:3000/characters/1
+Completed 302 Found in 38ms (ActiveRecord: 6.3ms | Allocations: 9064)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:39:50 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:118:in `set_character'
+  [1m[36mRelationship Load (0.6ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 49.7ms | Allocations: 16423)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 87ms (Views: 57.5ms | ActiveRecord: 13.5ms | Allocations: 30880)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:39:50 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 2151)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:39:57 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 1.9ms | Allocations: 625)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 25.3ms | ActiveRecord: 3.5ms | Allocations: 16085)
+
+
+Started GET "/characters/1/addRelation" for ::1 at 2019-12-02 13:40:10 +0800
+Processing by CharactersController#addRelation as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (1.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:93:in `addRelation'
+  [1m[36mRelationship Load (0.6ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (1.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (5.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" != $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:41:in `notRelated'
+  Rendering characters/addRelation.html.erb within layouts/application
+  Rendered characters/addRelation.html.erb within layouts/application (Duration: 2.2ms | Allocations: 860)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 122ms (Views: 59.4ms | ActiveRecord: 10.9ms | Allocations: 17469)
+
+
+Started GET "/characters" for ::1 at 2019-12-02 13:40:12 +0800
+Processing by CharactersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/views/characters/index.html.erb:16
+  Rendered characters/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2770)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 36.3ms | ActiveRecord: 1.0ms | Allocations: 12213)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:40:14 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:118:in `set_character'
+  [1m[36mRelationship Load (0.6ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.9ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 24.8ms | Allocations: 6395)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 45.1ms | ActiveRecord: 3.9ms | Allocations: 20997)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:40:14 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (15.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 16.9ms | Allocations: 6215)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:44:45 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:115:in `set_character'
+  [1m[36mRelationship Load (1.0ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (1.6ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+  Rendered characters/show.html.erb within layouts/application (Duration: 301.7ms | Allocations: 87220)
+Completed 500 Internal Server Error in 388ms (ActiveRecord: 41.9ms | Allocations: 116621)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `character' for #<#<Class:0x00007f99202eae58>:0x00007f99202e3798>):
+    26: 	<strong>Relationships:</strong>
+    27: 	<% @characters.each do |key,value| %>
+    28: 		<p><%=key%>: <%= value %></p>
+    29: 		<%=link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' }%>
+    30: 	<% end %>
+    31: </p>
+    32: <div>
+  
+app/views/characters/show.html.erb:29
+app/views/characters/show.html.erb:27:in `each'
+app/views/characters/show.html.erb:27
+Started GET "/characters/1" for ::1 at 2019-12-02 13:44:53 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:115:in `set_character'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (1.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (1.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (1.2ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 42.9ms | Allocations: 6395)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 109ms (Views: 80.9ms | ActiveRecord: 6.4ms | Allocations: 22017)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:44:53 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (15.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 15.2ms | Allocations: 3129)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:49:43 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:115:in `set_character'
+  [1m[36mRelationship Load (0.7ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+  Rendered characters/show.html.erb within layouts/application (Duration: 532.3ms | Allocations: 87735)
+Completed 500 Internal Server Error in 666ms (ActiveRecord: 49.1ms | Allocations: 117002)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `character' for #<#<Class:0x00007f991e54e0c0>:0x00007f991e546f00>):
+    26: 	<strong>Relationships:</strong>
+    27: 	<% @characters.each do |key,value| %>
+    28: 		<p><%=key%>: <%= value.affiliation %></p>
+    29: 		<%=link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' }%>
+    30: 	<% end %>
+    31: </p>
+    32: <div>
+  
+app/views/characters/show.html.erb:29
+app/views/characters/show.html.erb:27:in `each'
+app/views/characters/show.html.erb:27
+Started GET "/characters/1" for ::1 at 2019-12-02 13:49:52 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:115:in `set_character'
+  [1m[36mRelationship Load (1.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (1.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (1.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (1.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (3.1ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 50.6ms | Allocations: 6401)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 149ms (Views: 105.8ms | ActiveRecord: 11.1ms | Allocations: 22013)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:49:53 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 2153)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:50:00 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:115:in `set_character'
+  [1m[36mRelationship Load (0.8ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 33.5ms | Allocations: 6404)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 111ms (Views: 75.1ms | ActiveRecord: 5.5ms | Allocations: 22006)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:50:01 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 3.1ms | Allocations: 2151)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:51:09 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:115:in `set_character'
+  [1m[36mRelationship Load (1.3ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (1.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (1.0ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 82.3ms | Allocations: 17010)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 273ms (Views: 101.7ms | ActiveRecord: 62.6ms | Allocations: 53576)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:51:10 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 0.4ms | Allocations: 2151)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:55:29 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:115:in `set_character'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+  Rendered characters/show.html.erb within layouts/application (Duration: 29.3ms | Allocations: 12789)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 31.9ms | Allocations: 42047)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 4, expected 0..3)):
+    26: 	<strong>Relationships:</strong>
+    27: 	<% @characters.each do |key,value| %>
+    28: 		<p><%=key%>: <%= value.affiliation %></p>
+    29: 		<%=link_to 'Destroy', "/posts/#{value.id}/destroy" ,value, method: :delete, data: { confirm: 'Are you sure?' }%>
+    30: 	<% end %>
+    31: </p>
+    32: <div>
+  
+app/views/characters/show.html.erb:29
+app/views/characters/show.html.erb:27:in `each'
+app/views/characters/show.html.erb:27
+Started GET "/characters/1" for ::1 at 2019-12-02 13:55:48 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:115:in `set_character'
+  [1m[36mRelationship Load (0.6ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.9ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (7.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 55.7ms | Allocations: 6577)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 158ms (Views: 112.4ms | ActiveRecord: 11.6ms | Allocations: 22183)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:55:49 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 2151)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:56:26 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (1.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:115:in `set_character'
+  [1m[36mRelationship Load (0.6ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (1.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (2.1ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 43.5ms | Allocations: 6580)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 91.3ms | ActiveRecord: 7.7ms | Allocations: 22170)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:56:27 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 2195)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:57:18 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:119:in `set_character'
+  [1m[36mRelationship Load (0.7ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (2.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (2.7ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 172.8ms | Allocations: 16537)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 390ms (Views: 196.7ms | ActiveRecord: 93.8ms | Allocations: 52071)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:57:20 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 2146)
+
+
+Started DELETE "/characters/deleteAffiliation/1" for ::1 at 2019-12-02 13:57:23 +0800
+Processing by CharactersController#destroyRelation as HTML
+  Parameters: {"authenticity_token"=>"A9ZI/w+1bIDDoHYJjIbqcfgu8IgkUgSZxspwpAHhsTlW37r/HDLGv6R79llZ76cMWcHmpyqTqS8PM517alphow==", "id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 1.1ms | Allocations: 2291)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:57:25 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:119:in `set_character'
+  [1m[36mRelationship Load (0.9ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 23.1ms | Allocations: 6143)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 45.6ms | ActiveRecord: 3.9ms | Allocations: 20583)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:57:26 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 2157)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:57:38 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (2.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:119:in `set_character'
+  [1m[36mRelationship Load (5.1ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (1.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 107.4ms | Allocations: 16576)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 396ms (Views: 133.2ms | ActiveRecord: 101.2ms | Allocations: 52093)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:57:39 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 4.0ms | Allocations: 3756)
+
+
+Started DELETE "/characters/deleteAffiliation/1" for ::1 at 2019-12-02 13:57:42 +0800
+Processing by CharactersController#destroyRelation as HTML
+  Parameters: {"authenticity_token"=>"i01bjJEwHb1lcPOzOMBddsNKpOpFJKlS1YJeFMb6hEveRKmMgre3ggKrc+PtqRALYqWyxUvlBOQce7PLrUFU0Q==", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 2298)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:58:02 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:119:in `set_character'
+  [1m[36mRelationship Load (0.8ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 22.4ms | Allocations: 6143)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 45.0ms | ActiveRecord: 3.4ms | Allocations: 20579)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:58:02 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 2156)
+
+
+Started DELETE "/characters/deleteAffiliation/6" for ::1 at 2019-12-02 13:58:05 +0800
+Processing by CharactersController#destroyRelation as HTML
+  Parameters: {"authenticity_token"=>"d1rpbXv0H5FFKNlAmmAverFCFvDBA6xEMJweDktMB3kiUxttaHO1riLzWRBPCWIHEK0A38/CAfL5ZfPRIPfX4w==", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 2298)
+
+
+Started GET "/characters/deleteAffiliation/6" for ::1 at 2019-12-02 13:58:24 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/characters/deleteAffiliation/6"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characters/1" for ::1 at 2019-12-02 13:58:27 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:119:in `set_character'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 43.8ms | Allocations: 16578)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 158ms (Views: 59.8ms | ActiveRecord: 34.4ms | Allocations: 52114)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:58:28 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (16.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 16.5ms | Allocations: 2999)
+
+
+Started DELETE "/characters/deleteAffiliation/6" for ::1 at 2019-12-02 13:58:32 +0800
+Processing by CharactersController#destroyRelation as HTML
+  Parameters: {"authenticity_token"=>"EWLvzS/6/7pw9CW9/osdC7WT1XuAntshg6yPuVkI4KtEax3NPH1VhRcvpe0r4lB2FHzDVI5fdpdKVWJmMrMwMQ==", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 2289)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 13:58:34 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:119:in `set_character'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 24.1ms | Allocations: 6143)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 44.7ms | ActiveRecord: 3.8ms | Allocations: 20592)
+
+
+Started GET "/test" for ::1 at 2019-12-02 13:58:35 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 4.9ms | Allocations: 3103)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 14:00:26 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:120:in `set_character'
+  [1m[36mRelationship Load (1.1ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 149.4ms | Allocations: 16537)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 380ms (Views: 194.5ms | ActiveRecord: 71.1ms | Allocations: 52064)
+
+
+Started GET "/test" for ::1 at 2019-12-02 14:00:28 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (11.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 11.5ms | Allocations: 2147)
+
+
+Started DELETE "/characters/deleteAffiliation/1" for ::1 at 2019-12-02 14:00:31 +0800
+Processing by CharactersController#destroyRelation as HTML
+  Parameters: {"authenticity_token"=>"nqan+5bXFKSjTagwjSUdOT8TbpXBboKhrJnZD0PuruzLr1X7hVC+m8SWKGBYTFBEnvx4us+vLxdlYDTQKFV+dg==", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE "relationships"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:113:in `destroyRelation'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 10ms (Views: 1.1ms | ActiveRecord: 1.0ms | Allocations: 2981)
+
+
+Started DELETE "/characters/deleteAffiliation/1" for ::1 at 2019-12-02 14:00:37 +0800
+Processing by CharactersController#destroyRelation as HTML
+  Parameters: {"authenticity_token"=>"nqan+5bXFKSjTagwjSUdOT8TbpXBboKhrJnZD0PuruzLr1X7hVC+m8SWKGBYTFBEnvx4us+vLxdlYDTQKFV+dg==", "id"=>"1"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRelationship Load (2.1ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE "relationships"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:113:in `destroyRelation'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 2)
+Completed 200 OK in 107ms (Views: 2.2ms | ActiveRecord: 34.9ms | Allocations: 15169)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 14:00:41 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:120:in `set_character'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 50.3ms | Allocations: 16576)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 60.9ms | ActiveRecord: 20.3ms | Allocations: 39910)
+
+
+Started GET "/test" for ::1 at 2019-12-02 14:00:42 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.6ms | Allocations: 3013)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 14:01:15 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:121:in `set_character'
+  [1m[36mRelationship Load (3.7ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.9ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 102.2ms | Allocations: 16535)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 325ms (Views: 126.9ms | ActiveRecord: 73.6ms | Allocations: 52042)
+
+
+Started GET "/test" for ::1 at 2019-12-02 14:01:17 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 1.2ms | ActiveRecord: 0.5ms | Allocations: 2155)
+
+
+Started DELETE "/characters/deleteAffiliation/1" for ::1 at 2019-12-02 14:01:19 +0800
+Processing by CharactersController#destroyRelation as HTML
+  Parameters: {"authenticity_token"=>"zXv16osJ0jptIDelxx9lebAyxguz7AEPMiRZzaczO5eYcgfqmI54BQr7t/USdigEEd3QJL0trLn73bQSzIjrDQ==", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE "relationships"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:113:in `destroyRelation'
+Completed 500 Internal Server Error in 254ms (ActiveRecord: 0.9ms | Allocations: 52567)
+
+
+  
+NameError (undefined local variable or method `characters' for #<CharactersController:0x00007f99204a6350>):
+  
+app/controllers/characters_controller.rb:115:in `destroyRelation'
+Started DELETE "/characters/deleteAffiliation/1" for ::1 at 2019-12-02 14:01:26 +0800
+Processing by CharactersController#destroyRelation as HTML
+  Parameters: {"authenticity_token"=>"zXv16osJ0jptIDelxx9lebAyxguz7AEPMiRZzaczO5eYcgfqmI54BQr7t/USdigEEd3QJL0trLn73bQSzIjrDQ==", "id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRelationship Load (1.8ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE "relationships"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:113:in `destroyRelation'
+Redirected to http://localhost:3000/characters
+Completed 302 Found in 258ms (ActiveRecord: 100.8ms | Allocations: 14930)
+
+
+Started GET "/characters" for ::1 at 2019-12-02 14:01:27 +0800
+Processing by CharactersController#index as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/views/characters/index.html.erb:16
+  Rendered characters/index.html.erb within layouts/application (Duration: 109.7ms | Allocations: 6808)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 197ms (Views: 136.5ms | ActiveRecord: 20.5ms | Allocations: 21203)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 14:01:30 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:121:in `set_character'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 51.5ms | Allocations: 16597)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 59.6ms | ActiveRecord: 16.1ms | Allocations: 31155)
+
+
+Started GET "/test" for ::1 at 2019-12-02 14:01:30 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (43.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 48ms (Views: 0.1ms | ActiveRecord: 43.4ms | Allocations: 4261)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 14:01:45 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:121:in `set_character'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 49.9ms | Allocations: 16574)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 152ms (Views: 61.4ms | ActiveRecord: 33.8ms | Allocations: 52070)
+
+
+Started GET "/test" for ::1 at 2019-12-02 14:01:46 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2155)
+
+
+Started DELETE "/characters/deleteAffiliation/6" for ::1 at 2019-12-02 14:01:50 +0800
+Processing by CharactersController#destroyRelation as HTML
+  Parameters: {"authenticity_token"=>"p8c/PcOJGK+o8k5Hq8iebUrVEuSBxrqaEq15+xmWvd/yzs090A6ykM8pzhd+odMQ6zoEy48HFyzbVJQkci1tRQ==", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRelationship Load (0.6ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE "relationships"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:113:in `destroyRelation'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.1ms | Allocations: 3158)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/characters_controller.rb:114:in `destroyRelation'
+Started GET "/characters/1" for ::1 at 2019-12-02 14:01:58 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:121:in `set_character'
+  [1m[36mRelationship Load (0.6ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (4.1ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 95.7ms | Allocations: 16537)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 245ms (Views: 115.5ms | ActiveRecord: 57.0ms | Allocations: 52075)
+
+
+Started GET "/test" for ::1 at 2019-12-02 14:01:59 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 7.3ms | Allocations: 2149)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 14:02:00 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:121:in `set_character'
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (1.0ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 22.7ms | Allocations: 6143)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 41.6ms | ActiveRecord: 3.7ms | Allocations: 20579)
+
+
+Started GET "/test" for ::1 at 2019-12-02 14:02:00 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 2157)
+
+
+Started DELETE "/characters/deleteAffiliation/6" for ::1 at 2019-12-02 14:02:03 +0800
+Processing by CharactersController#destroyRelation as HTML
+  Parameters: {"authenticity_token"=>"ErvYY8tjGT63EImQ9ceEuzv5Vuw7UiE85AFqZ6hQUHtHsipj2OSzAdDLCcAgrsnGmhZAwzWTjIot+Ie4w+uA4Q==", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRelationship Load (1.3ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE "relationships"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:113:in `destroyRelation'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/characters_controller.rb:114:in `destroyRelation'
+  [1m[36mRelationship Destroy (0.6ms)[0m  [1m[31mDELETE FROM "relationships" WHERE "relationships"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/characters_controller.rb:114:in `destroyRelation'
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/characters_controller.rb:114:in `destroyRelation'
+Redirected to http://localhost:3000/characters
+Completed 302 Found in 19ms (ActiveRecord: 5.1ms | Allocations: 4608)
+
+
+Started GET "/characters" for ::1 at 2019-12-02 14:02:03 +0800
+Processing by CharactersController#index as HTML
+  [1m[36mUser Load (24.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (7.9ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/views/characters/index.html.erb:16
+  Rendered characters/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 2554)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 36.3ms | ActiveRecord: 32.4ms | Allocations: 11842)
+
+
+Started GET "/characters/1" for ::1 at 2019-12-02 14:02:06 +0800
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:121:in `set_character'
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT "relationships".* FROM "relationships" WHERE (character_id = 1 or character2 = 1)[0m
+  ↳ app/models/character.rb:20:in `characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCACHE Character Load (0.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 1]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/character.rb:25:in `block in characterRelationship'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/character.rb:21:in `block in characterRelationship'
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT "stories".* FROM "stories" INNER JOIN "characters_stories" ON "stories"."id" = "characters_stories"."story_id" WHERE "characters_stories"."character_id" = $1[0m  [["character_id", 1]]
+  ↳ app/views/characters/show.html.erb:12
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered characters/show.html.erb within layouts/application (Duration: 20.5ms | Allocations: 6101)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 39.8ms | ActiveRecord: 2.5ms | Allocations: 19879)
+
+
+Started GET "/test" for ::1 at 2019-12-02 14:02:07 +0800
+Processing by CharactersController#testJSON as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 2160)
+
+

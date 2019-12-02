@@ -95,18 +95,38 @@ class CharactersController < ApplicationController
   end
 
   def createRelation
-    render plain: params
+    @character = Character.find(params[:id])
+    @relation_params = relation_params.merge(character2: @character.id)
+    @newRelation = Relationship.new(@relation_params)
+    respond_to do |format|
+      if @newRelation.save
+        format.html { redirect_to @character, notice: 'Character was successfully created.' }
+        format.json { render :show, status: :created, location: @character }
+      else
+        format.html { render :new }
+        format.json { render json: @character.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def destroyRelation
+    @relationship = Relationship.find(params[:id])
+    @relationship.destroy
+    redirect_to characters_path
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_character
       @character = Character.find(params[:id])
-
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def character_params
       params.require(:character).permit(:name, :story_ids => [])
+    end
+
+    def relation_params
+      params.require(:character).permit(:character_id,:affiliation)
     end
 end
