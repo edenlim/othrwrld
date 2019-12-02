@@ -115,6 +115,16 @@ class CharactersController < ApplicationController
     redirect_to characters_path
   end
 
+  def d3json
+    @characters = Character.all
+    @relationships = Relationship.all
+    @data = {}
+    @data[:nodes] = @characters.select(:id,:name)
+    @data[:links] = @relationships
+    render json: @data
+
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_character
