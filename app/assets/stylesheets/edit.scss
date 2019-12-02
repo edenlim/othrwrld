@@ -1,0 +1,40 @@
+body{
+	background-color: #161616;
+}
+
+.contain{
+	color: white;
+}
+
+.formName{
+	border: 1px solid white;
+	margin: 40px;
+	text-align: center;
+	height: 20vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding-bottom:  20px;
+	box-shadow: 0 0 10px white, 0 0 20px white;
+}
+
+.formName label{
+	font-size: 28px;
+	margin: 20px 0px;
+}
+
+.formName input{
+	text-align: center;
+	font-size: 2vh;
+}
+
+.checkBox{
+	display: flex;
+	justify-content: center;
+	margin: 40px;
+}
+
+.submit{
+	margin: 50px;
+}
