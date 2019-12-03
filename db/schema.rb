@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_02_012523) do
+ActiveRecord::Schema.define(version: 2019_12_03_084122) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
-    t.string "qualities"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -39,6 +38,15 @@ ActiveRecord::Schema.define(version: 2019_12_02_012523) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "qualities", force: :cascade do |t|
+    t.string "quality"
+    t.string "value"
+    t.bigint "character_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["character_id"], name: "index_qualities_on_character_id"
   end
 
   create_table "relationships", force: :cascade do |t|
@@ -118,6 +126,7 @@ ActiveRecord::Schema.define(version: 2019_12_02_012523) do
   end
 
   add_foreign_key "characters", "users"
+  add_foreign_key "qualities", "characters"
   add_foreign_key "stories", "users"
   add_foreign_key "universes", "users"
 end

@@ -12,7 +12,7 @@ class CharactersController < ApplicationController
   def index
     @characters = Character.all
     @relationship = Relationship.all
-
+    # render :layout => false
   end
 
   # GET /characters/1
@@ -21,13 +21,10 @@ class CharactersController < ApplicationController
     @characters = @character.characterRelationship
 
 
-
-    # render plain: @characters["Jane Hutton"].affiliation
-
     @character_id = params[:id]
 
     # render plain: @relationships.inspect
-    @qualities = JSON.parse(@character.qualities)
+    @qualities = @character.quality
 
     respond_to do |format|
       format.json {
@@ -70,9 +67,7 @@ class CharactersController < ApplicationController
   # PATCH/PUT /characters/1
   # PATCH/PUT /characters/1.json
   def update
-    # render plain: character_params
-    p "////////////////////"
-    p character_params
+
     @character = Character.find(params[:id])
     @character.update(character_params)
     redirect_to characters_path
@@ -82,9 +77,12 @@ class CharactersController < ApplicationController
   # DELETE /characters/1.json
   def destroy
     @character = Character.find(params[:id])
+    @exist = Relationship.where(character_id: params[:id]).or(Relationship.where(character2: params[:id]))
+    # @data = @character.merge(@exist)
+    # render plain: @exist.inspect
     @character.destroy
+    Relationship.where(id: @exist.map(&:id)).delete_all
     redirect_to characters_path
-    # render plain: @character.inspect
 
     # respond_to do |format|
     #   format.html { redirect_to characters_url, notice: 'Character was successfully destroyed.' }

@@ -12,19 +12,22 @@
 
 	<div class="contain">
 	  <h1><strong>Qualities:</strong></h1>
-	  <% @qualities.each do |key,value| %>
-	  	<p><%=key%>: <%=value%></p>
+	  <% @qualities.each do |quality| %>
+	  	<p><%=quality.quality%>: <%=quality.value%></p>
 	  <% end %>
-
 	</div>
 
 	<div class="contain">
 		<h1><strong>Relationships:</strong></h1>
+
+
 		<% @characters.each do |key,value| %>
 			<p><%=key%>: <%= value.affiliation %>
 			<%=link_to 'Destroy', "/characters/deleteAffiliation/#{value.id}" , method: :delete, data: { confirm: 'Are you sure?' }%>
 			</p>
 		<% end %>
+
+
 		<span class="add"><%= link_to 'Add relationship', add_relation_path %></span>
 	</div>
 

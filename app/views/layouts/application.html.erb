@@ -7,7 +7,7 @@
 
 
 
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
   </head>
 
   <body style="margin: 0">
@@ -58,8 +58,7 @@
 		<% end %>
     <%= yield %>
   </body>
+  <%= javascript_pack_tag "application" %>
   <%= stylesheet_link_tag 'scaffolds' %>
   <%= stylesheet_link_tag 'navbar' %>
-  <%= javascript_pack_tag 'application' %>
-  <%= javascript_pack_tag 'navbar' %>
-</html>
+  </html>

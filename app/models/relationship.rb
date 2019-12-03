@@ -3,4 +3,5 @@ class Relationship < ApplicationRecord
   belongs_to :following, foreign_key: :character2, class_name: 'Character'
 
 
+
 end

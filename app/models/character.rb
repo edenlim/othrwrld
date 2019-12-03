@@ -6,11 +6,15 @@ class Character < ApplicationRecord
 
   has_many :relationships
 
+
   has_many :follower_relationships, foreign_key: :character2, class_name: 'Relationship'
   has_many :followers, through: :follower_relationships, source: :follower
 
+
   has_many :following_relationships, foreign_key: :character_id, class_name: 'Relationship'
   has_many :following, through: :following_relationships, source: :following
+
+  has_many :quality
 
   def characterRelationship
     @relationship = Relationship.where('character_id = ? or character2 = ?', self.id, self.id)
@@ -23,13 +27,16 @@ class Character < ApplicationRecord
       charName = @character.name.to_s
       if charName == self.name
         @character = Character.where(id: relation.character2)[0]
-        @relation = relation
-        charName = @character.name.to_s
-        relationHash[charName] = @relation
+        if @character != nil
+          @relation = relation
+          charName = @character.name.to_s
+          relationHash[charName] = @relation
+        end
       elsif charName != self.name
-
-        @relation = relation
-        relationHash[charName] = @relation
+        if @character != nil
+          @relation = relation
+          relationHash[charName] = @relation
+        end
       end
     end
     return relationHash
@@ -43,4 +50,9 @@ class Character < ApplicationRecord
     end
     return @notRelated
   end
+
+  def destroyRelation
+    @exist = Relationship.where(character_id: self.id).or(Relationship.where(character2: self.id))
+  end
+
 end
