@@ -51,7 +51,7 @@ class CharactersController < ApplicationController
   # POST /characters
   # POST /characters.json
   def create
-    @character = Character.new(character_params.merge(user_id: current_user.id, qualities: '{}'))
+    @character = Character.new(character_params.merge(user_id: current_user.id))
 
     respond_to do |format|
       if @character.save
@@ -126,6 +126,17 @@ class CharactersController < ApplicationController
 
   end
 
+  def editQualities
+    @quality = Quality.find(params[:qualityid])
+  end
+
+  def updateQualities
+    @quality = Quality.find(params[:qualityid])
+    @id = params[:characterid]
+    @quality.update(quality_params)
+    redirect_to "/characters/#{@id}"
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_character
@@ -139,5 +150,9 @@ class CharactersController < ApplicationController
 
     def relation_params
       params.require(:character).permit(:character_id,:affiliation)
+    end
+
+    def quality_params
+      params.require(:quality).permit(:quality,:value)
     end
 end

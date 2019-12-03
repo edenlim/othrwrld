@@ -13,7 +13,8 @@
 	<div class="contain">
 	  <h1><strong>Qualities:</strong></h1>
 	  <% @qualities.each do |quality| %>
-	  	<p><%=quality.quality%>: <%=quality.value%></p>
+	  	<p><%=quality.quality%>: <%=quality.value%>
+	  	<%= link_to 'Edit', qualities_path(@character,quality) %></p>
 	  <% end %>
 	</div>
 
