@@ -7,8 +7,6 @@
 			<%= form.collection_check_boxes :story_ids, @stories, :id, :name %>
 		</div>
 
-
-
 		<div class="formName">
 	    <%= form.label :name %>
 	    <%= form.text_field :name %>
@@ -19,7 +17,7 @@
 	  </div>
 	<% end %>
 
-	<%= link_to 'Show', @character %> |
-	<%= link_to 'Back', characters_path %>
+	<%= link_to 'Back', @character %> |
+	<%= link_to 'Home', characters_path %>
 </div>
 <%= stylesheet_link_tag 'edit' %>

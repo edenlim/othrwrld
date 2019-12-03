@@ -1,28 +1,31 @@
-<h1>Editing Story</h1>
+<div class="contain">
+	<h1>Editing Story</h1>
 
-<%= form_with scope: :story, model: @story, local: true do |form| %>
+	<%= form_with scope: :story, model: @story, local: true do |form| %>
 
-	<%= form.collection_select :universe_id, @universes, :id, :name %> <br/>
-	<%= form.collection_select :genre_id, @genres, :id, :name %>
+		<%= form.collection_select :universe_id, @universes, :id, :name %> <br/>
+		<%= form.collection_select :genre_id, @genres, :id, :name %>
 
-	<p>
-    <%= form.label :name %><br>
-    <%= form.text_field :name %>
-  </p>
-
-
-
-  <p>
-    <%= form.label :summary %><br>
-    <%= form.text_area :summary %>
-  </p>
+		<p>
+	    <%= form.label :name %><br>
+	    <%= form.text_field :name %>
+	  </p>
 
 
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
+
+	  <p>
+	    <%= form.label :summary %><br>
+	    <%= form.text_area :summary %>
+	  </p>
 
 
-<%= link_to 'Show', @story %> |
-<%= link_to 'Back', stories_path %>
+	  <p>
+	    <%= form.submit %>
+	  </p>
+	<% end %>
+
+
+	<%= link_to 'Show', @story %> |
+	<%= link_to 'Back', stories_path %>
+</div>
+<%= stylesheet_link_tag 'edit' %>

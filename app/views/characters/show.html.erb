@@ -1,6 +1,4 @@
 <div class="show">
-	<%= link_to 'Edit', edit_character_path(@character) %> |
-	<%= link_to 'Back', characters_path %>
 
 
 	<h1 class="name"><%= @character.name %></h1>
@@ -30,12 +28,14 @@
 		<span class="add"><%= link_to 'Add relationship', add_relation_path %></span>
 	</div>
 
-	<div>
-		<%= javascript_pack_tag 'hello_react' %>
-		<%= javascript_pack_tag 'd3Graph/test.js' %>
+	<div class="links">
+	<%= link_to 'Edit', edit_character_path(@character) %> |
+	<%= link_to 'Back', characters_path %>
 	</div>
+
+
 	<br/>
 
 
 </div>
-<%= stylesheet_link_tag 'characters' %>
+<%= stylesheet_link_tag 'shows' %>

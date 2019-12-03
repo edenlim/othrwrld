@@ -12,7 +12,7 @@ class CharactersController < ApplicationController
   def index
     @characters = Character.all
     @relationship = Relationship.all
-    # render plain: @relationship.inspect
+
   end
 
   # GET /characters/1
@@ -47,6 +47,7 @@ class CharactersController < ApplicationController
   # GET /characters/1/edit
   def edit
     @stories = Story.all
+    # @relationship = CharactersStory.where(:character)
     @character = Character.find(params[:id])
   end
 
@@ -70,6 +71,8 @@ class CharactersController < ApplicationController
   # PATCH/PUT /characters/1.json
   def update
     # render plain: character_params
+    p "////////////////////"
+    p character_params
     @character = Character.find(params[:id])
     @character.update(character_params)
     redirect_to characters_path

@@ -45,3 +45,13 @@ td{
 .show ul{
 	color: white;
 }
+
+
+svg{
+	display: block;
+	margin: 0 auto;
+	width: 800px;
+	height: 800px;
+	border: 1px solid white;
+	overflow: scroll;
+}

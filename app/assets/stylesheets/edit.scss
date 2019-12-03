@@ -35,6 +35,38 @@ body{
 	margin: 40px;
 }
 
+.contain{
+	margin: 20px auto;
+	padding: 20px 0;
+}
+
+.contain h1{
+	text-align: center;
+	font-size: 40px;
+}
+
 .submit{
-	margin: 50px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+.contain a{
+	text-shadow: 0 0 20px #005bff,0 0 20px #5bff00,0 0 20px #005bff;
+	text-align: center;
+	display: block;
+	margin-top: 20px;
+}
+
+form select{
+	margin: 0 auto;
+	display: block;
+}
+
+form p{
+	text-align: center;
+}
+
+.oneDiv{
+	margin: 3vh 0;
 }

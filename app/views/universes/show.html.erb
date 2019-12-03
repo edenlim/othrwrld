@@ -1,20 +1,22 @@
 <div class="show">
-	<h1><%= @universe.name %></h1>
+	<h1 class="name"><%= @universe.name %></h1>
 
-	<p>
-	  <strong>Description:</strong>
-	  <%= @universe.description %>
-	</p>
+	<div class="contain">
+	  <h1><strong>Description:</strong></h1>
+	  <p><%= @universe.description %></p>
+	</div>
 
-	<p>
-		<strong>List of stories:</strong>
+	<div class="contain">
+		<h1><strong>List of stories:</strong></h1>
 		<% @universe.story.each do |story| %>
 			<p><%= story.name %></p>
 		<% end %>
-	</p>
+	</div>
 
-	<%= link_to 'Edit', edit_universe_path(@universe) %> |
-	<%= link_to 'Back', universes_path %>
+	<div class="links">
+		<%= link_to 'Edit', edit_universe_path(@universe) %> |
+		<%= link_to 'Back', universes_path %>
+	</div>
 </div>
 
-<%= stylesheet_link_tag 'characters' %>
+<%= stylesheet_link_tag 'shows' %>
