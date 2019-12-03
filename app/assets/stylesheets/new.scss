@@ -1,0 +1,49 @@
+body{
+	background-color: #161616
+}
+
+
+
+.contain {
+	color: white;
+	margin: 20px auto;
+	padding: 20px 0;
+}
+
+.contain a{
+	text-shadow: 0 0 20px #005bff,0 0 20px #5bff00,0 0 20px #005bff;
+	text-align: center;
+	display: block;
+	margin-top: 20px;
+}
+
+.contain h1{
+	text-align: center;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+form select{
+	margin: 0 auto;
+	display: block;
+}
+
+form p{
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+}
+
+form{
+	margin-top: 20px;
+}
+input{
+	text-align: center;
+}
+textarea{
+	width: 30vw;
+	height: 10vh;
+	text-align: center;
+}

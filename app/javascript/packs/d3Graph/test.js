@@ -95,6 +95,9 @@ console.log("WORKINGS")
 // ]
 // }
 
+//CSS FILE IS TEMPLATE.SCSS
+
+
 var svg = d3.select("body").append('svg'),
     width = svg.attr("width"),
     height = svg.attr("height");
@@ -107,22 +110,6 @@ var simulation = d3.forceSimulation()
 
 d3.json("/characters/all/d3json#", function(error, graph) {
     if (error) throw error;
-
-    // var newLinks = graph.links.filter((link)=>{
-    //     for(let i=0; i < graph.nodes.length; i++){
-    //         let check = false
-    //         console.log("Id 1: "+link.character_id)
-    //         console.log("Id 2: "+link.character2)
-    //         console.log(graph.nodes[i].id)
-    //         if((link.character_id === graph.nodes[i].id)||(link.character2 === graph.nodes[i].id)){
-    //             check = true;
-    //         }
-    //         return check
-    //     }
-
-    // })
-
-    // console.log(newLinks)
 
     graph.links.forEach(function(d) {
         d.source = d.character_id;
