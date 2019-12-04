@@ -4,7 +4,12 @@
 	<%= form_with scope: :character, model: @character, local: true do |form| %>
 
 		<div class="checkBox">
-			<%= form.collection_check_boxes :story_ids, @stories, :id, :name %>
+			<%= form.collection_check_boxes :story_ids, @stories, :id, :name  do |story|%>
+				<p>
+					<%= story.check_box %>
+					<%= story.label %>
+				</p>
+			<% end%>
 		</div>
 
 		<div class="formName">
