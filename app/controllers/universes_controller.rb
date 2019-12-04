@@ -1,7 +1,7 @@
 class UniversesController < ApplicationController
   before_action :authenticate_user!
   def index
-    @universes = Universe.all
+    @universes = Universe.where(user_id: current_user.id)
   end
 
   def show

@@ -1,0 +1,22 @@
+<div class="contain">
+	<h1>New Qualities</h1>
+
+	<%= form_with scope: :quality, url: post_quality_path, local: true do |form| %>
+		<p>
+	    <%= form.label :quality %><br>
+	    <%= form.text_field :quality %>
+	  </p>
+
+
+
+	  <p>
+	    <%= form.label :value %><br>
+	    <%= form.text_area :value %>
+	  </p>
+
+
+	    <%= form.submit 'Save Quality', :class => "submit" %>
+
+	<% end %>
+</div>
+<%= stylesheet_link_tag 'new' %>

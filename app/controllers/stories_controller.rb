@@ -5,7 +5,7 @@ class StoriesController < ApplicationController
   # GET /stories
   # GET /stories.json
   def index
-    @stories = Story.all
+    @stories = Story.where(user_id: current_user.id)
   end
 
   # GET /stories/1
@@ -17,7 +17,7 @@ class StoriesController < ApplicationController
   # GET /stories/new
   def new
     # @story = Story.new
-    @universes = Universe.all
+    @universes = Universe.where(user_id: current_user.id)
     @genres = Genre.all
     @user_id = current_user.id
   end
@@ -25,7 +25,7 @@ class StoriesController < ApplicationController
   # GET /stories/1/edit
   def edit
     @story = Story.find(params[:id])
-    @universes = Universe.all
+    @universes = Universe.where(user_id: current_user.id)
     @genres = Genre.all
   end
 

@@ -141,7 +141,7 @@ d3.json("/characters/all/d3json#", function(error, graph) {
         .enter().append("text")
         .attr("class", "label")
         .text(function(d) { return d.name; })
-        // .style('text-anchor', "middle")
+        .style('text-anchor', "middle")
         .style('dominant-baseline', "hanging")
         .attr("y", 5);
 
@@ -169,9 +169,9 @@ d3.json("/characters/all/d3json#", function(error, graph) {
             .attr("cy", function(d) { return d.y - 6; });
 
         label
-            .attr("x", function(d) { return d.x; })
-            .attr("y", function(d) { return d.y; })
-            .style("font-size", "15px").style("fill", "#4393c3");
+            .attr("x", function(d) { return d.x + 5; })
+            .attr("y", function(d) { return d.y - 25; })
+            .style("font-size", "10px").style("fill", "#4393c3");
     }
 });
 
@@ -188,7 +188,13 @@ function dblclick(d) {
         d.fx = d.x;
         d.fy = d.y;
         d.fixed = true;
-        d3.select(this).select("circle").style("fill", "red");
+
+        console.log(d3.select(this)["_groups"][0][0])
+        console.log(d3.select(this))
+        console.log(d3.select(this).select("circle"))
+        // d3.select(this)["_groups"][0][0].style("fill", "red")
+        d3.select(this).select("_groups"[0][0]).select("circle").style("fill", "red")
+
     }
 };
 

@@ -10,8 +10,10 @@ class CharactersController < ApplicationController
   # GET /characters
   # GET /characters.json
   def index
-    @characters = Character.all
+    @user_id = current_user.id
+    @characters = Character.where(user_id: @user_id)
     @relationship = Relationship.all
+    # render plain: current_user.id
     # render :layout => false
   end
 
@@ -97,7 +99,7 @@ class CharactersController < ApplicationController
 
   def createRelation
     @character = Character.find(params[:id])
-    @relation_params = relation_params.merge(character2: @character.id)
+    @relation_params = relation_params.merge(character2: @character.id, user_id: current_user.id)
     @newRelation = Relationship.new(@relation_params)
     respond_to do |format|
       if @newRelation.save
@@ -117,8 +119,9 @@ class CharactersController < ApplicationController
   end
 
   def d3json
-    @characters = Character.all
-    @relationships = Relationship.all
+    @user_id = current_user.id
+    @characters = Character.where(user_id: @user_id)
+    @relationships = Relationship.where(user_id: @user_id)
     @data = {}
     @data[:nodes] = @characters.select(:id,:name)
     @data[:links] = @relationships
@@ -135,6 +138,34 @@ class CharactersController < ApplicationController
     @id = params[:characterid]
     @quality.update(quality_params)
     redirect_to "/characters/#{@id}"
+  end
+
+  def addQuality
+    @character_id = params[:id]
+  end
+
+  def postQuality
+    @character_id = params[:id]
+    @data = quality_params.merge(:character_id => @character_id)
+    @quality = Quality.new(@data)
+    respond_to do |format|
+      if @quality.save
+        format.html { redirect_to "/characters/#{@character_id}", notice: 'Quality was successfully created.' }
+        format.json { render :show, status: :created, location: @character }
+      else
+        format.html { render :new }
+        format.json { render json: @character.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def destroyQuality
+    @quality_id = params[:qualityid]
+    @id = params[:characterid]
+    @quality = Quality.find(@quality_id)
+    @quality.destroy
+    redirect_to "/characters/#{@id}"
+    # render plain: @quality.inspect
   end
 
   private

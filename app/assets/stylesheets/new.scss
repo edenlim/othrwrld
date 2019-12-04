@@ -47,3 +47,16 @@ textarea{
 	height: 10vh;
 	text-align: center;
 }
+
+.submit{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	padding: 20px;
+	border: none;
+	background-color: #161616;
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+	text-shadow: 0 0 20px #005bff,0 0 20px #5bff00,0 0 20px #005bff;
+}

@@ -32,7 +32,7 @@ body{
   }
 }
 .heart {
-    z-index : 999;
+    z-index : -1;
     animation : heartfade 2s linear;
     position : absolute;
 }
