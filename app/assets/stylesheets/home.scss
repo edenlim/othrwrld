@@ -111,3 +111,54 @@ body{
 	box-shadow: 0 0 20px #005bff;
 	border: 2px solid white;
 }
+
+.home{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.homeLogin{
+	font-size: 100px;
+	animation: pulse 4.5s linear infinite;
+	transition: 1s
+}
+
+.submit{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	padding: 20px;
+	border: none;
+	background-color: #161616;
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+	text-shadow: 0 0 20px #005bff,0 0 20px #5bff00,0 0 20px #005bff;
+}
+
+@keyframes pulse{
+	0%{
+		text-shadow: 0 0 20px #ff005b,0 0 40px #ff005b, 0 0 80px #ff005b;
+	}
+	33%{
+		text-shadow: 0 0 20px #5bff00,0 0 40px #5bff00,0 0 80px #5bff00;
+	}
+	66%{
+		text-shadow: 0 0 20px #005bff,0 0 40px #005bff,0 0 80px #005bff;
+	}
+	100%{
+		text-shadow: 0 0 20px #ff005b,0 0 40px #ff005b,0 0 80px #ff005b;
+	}
+}
+
+label{
+	text-align: center;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+}
