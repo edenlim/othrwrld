@@ -4,7 +4,7 @@ document.body.insertBefore(brd, document.getElementById("board"));
 const duration = 1000;
 const speed = 0.5;
 const cursorXOffset = 0;
-const cursorYOffset = 400;
+const cursorYOffset = 0;
 
 var hearts = [];
 
