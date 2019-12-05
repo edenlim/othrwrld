@@ -48,10 +48,10 @@
     },
     "romance": {
       "js": [
-        "/packs/js/romance-c15ac66eed131b9d500e.js"
+        "/packs/js/romance-3b58c6348fe92927ee9e.js"
       ],
       "js.map": [
-        "/packs/js/romance-c15ac66eed131b9d500e.js.map"
+        "/packs/js/romance-3b58c6348fe92927ee9e.js.map"
       ]
     }
   },
@@ -59,6 +59,6 @@
   "hello_react.js.map": "/packs/js/hello_react-79d8d07cfde08d63ecfe.js.map",
   "navbar.js": "/packs/js/navbar-ee8a3afbc9deae0f77ac.js",
   "navbar.js.map": "/packs/js/navbar-ee8a3afbc9deae0f77ac.js.map",
-  "romance.js": "/packs/js/romance-c15ac66eed131b9d500e.js",
-  "romance.js.map": "/packs/js/romance-c15ac66eed131b9d500e.js.map"
+  "romance.js": "/packs/js/romance-3b58c6348fe92927ee9e.js",
+  "romance.js.map": "/packs/js/romance-3b58c6348fe92927ee9e.js.map"
 }
