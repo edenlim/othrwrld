@@ -45,7 +45,11 @@ class CharactersController < ApplicationController
 
   # GET /characters/1/edit
   def edit
-    @stories = Story.all
+    @user_id = current_user.id
+    @stories = Story.where(user_id: @user_id)
+    # render plain: @stories.inspect
+
+    # @stories = Story.all
     # @relationship = CharactersStory.where(:character)
     @character = Character.find(params[:id])
   end
