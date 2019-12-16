@@ -91,7 +91,8 @@
 # Quality.create(quality: 'Hair', value: 'Black', character_id: 3)
 # Quality.create(quality: 'Height', value: 'Tall', character_id: 1)
 
-Genre.create(name: "Sci-fi")
-Genre.create(name: "Comedy")
-Genre.create(name: "Romance")
-Genre.create(name: "Horror")
+# Genre.create(name: "Sci-fi")
+# Genre.create(name: "Comedy")
+# Genre.create(name: "Romance")
+# Genre.create(name: "Horror")
+Genre.create(name: "Fantasy")
