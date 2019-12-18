@@ -1,13 +1,33 @@
 
 <div class="glitchDiv">
-	<h1 class="glitch romance" data-text="<%= @story.name %>">
+	<h1 class="glitch romance comedy fantasy" data-text="<%= @story.name %>">
 	  <%= @story.name %>
 	</h1>
 </div>
 
 
 
-<div class="romanceBody scifiBody">
+<div class="romanceBody scifiBody comedyBody fantasyBody">
+
+
+
+		<div class="bird-container bird-container--one">
+			<div class="bird bird--one"></div>
+		</div>
+
+		<div class="bird-container bird-container--two">
+			<div class="bird bird--two"></div>
+		</div>
+
+		<div class="bird-container bird-container--three">
+			<div class="bird bird--three"></div>
+		</div>
+
+		<div class="bird-container bird-container--four">
+			<div class="bird bird--four"></div>
+		</div>
+
+
 	<p>
 	  <strong>Universe:</strong>
 	  <%= @story.universe.name %>
@@ -35,6 +55,10 @@
 	<% elsif @story.genre.name == "Romance" %>
 		<%= stylesheet_link_tag 'romance' %>
 		<%= javascript_pack_tag 'romance' %>
+	<% elsif @story.genre.name == "Comedy" %>
+		<%= stylesheet_link_tag 'comedy' %>
+	<% elsif @story.genre.name == "Fantasy" %>
+		<%= stylesheet_link_tag 'fantasy' %>
 	<% end %>
 
 

@@ -1,0 +1,47 @@
+body{
+	background-color: yellow;
+}
+
+.comedyBody{
+	padding: 0 20px;
+}
+
+.comedy{
+	display: block;
+  font-size: 5vw;
+  vertical-align: middle;
+  height: 100px;
+  margin:0 auto;
+  line-height: 100px;
+}
+
+.comedy:hover{
+	animation: bounce 2s linear infinite;
+}
+
+@keyframes bounce{
+	0%{
+		transform: translateY(0px);
+	}
+	10%{
+		transform: translateY(-20px) translateX(-20px);
+	}
+	15%{
+		transform: translateY(0px) translateX(0px);
+	}
+	25%{
+		transform: translateY(-20px) translateX(20px);
+	}
+	30%{
+		transform: translateY(0px) translateX(0px);
+	}
+	40%{
+		transform: translateY(-10px);
+	}
+	45%{
+		transform: translateY(0px) translateX(0px);
+	}
+	100%{
+		transform: translateY(0px) translateX(0px);
+	}
+}

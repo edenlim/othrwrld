@@ -41,6 +41,7 @@ header{
 	align-items: center;
 	padding: 3vh 5%;
 	height: 2vh;
+	min-width: 900px;
 }
 
 .navbrand{
@@ -58,6 +59,7 @@ header{
 
 .navlinks{
 	list-style: none;
+	min-width: 556px;
 }
 
 .navlinks li{
@@ -80,6 +82,7 @@ header{
 	transition: .5s;
 	padding: 15px;
 	width: auto;
+	font-size: 15px;
 	// border-radius: 5px;
 }
 
