@@ -22,8 +22,9 @@ Hello.propTypes = {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
+    var tableDiv = document.getElementsByClassName("tableDiv")
+    ReactDOM.render(
         <App/>,
-    document.body.appendChild(document.createElement('div')),
-  )
+        document.body.querySelector(".tableDiv").appendChild(document.createElement('div')),
+    )
 })

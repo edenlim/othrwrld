@@ -22,8 +22,8 @@ class App extends React.Component {
 
     render(){
 
-        let addQualities = "";
-        let button = <button onClick={()=>{this.handleClick()}}> Add new Qualities </button>
+        let addQualities = <input type="text" name="name"/>;
+        let button = <button onClick={()=>{this.handleClick()}}> Search </button>
 
         if (this.state.active === true) {
             addQualities = <AddQualities handleClick={()=>{this.handleClick()}}/>
