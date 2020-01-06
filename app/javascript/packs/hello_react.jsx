@@ -19,6 +19,7 @@ Hello.propTypes = {
   name: PropTypes.string
 }
 
+console.log(test)
 
 
 document.addEventListener('DOMContentLoaded', () => {
