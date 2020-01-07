@@ -18,11 +18,12 @@ body{
   height: 100px;
   margin:0 auto;
   line-height: 100px;
-  position: relative;
+  // position: relative;
+  color: black;
   background: url("wood.jpg");
   background-attachment: fixed;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // -webkit-text-fill-color: transparent;
 }
 
 
