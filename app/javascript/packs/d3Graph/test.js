@@ -134,9 +134,11 @@ var rlschart = document.getElementById("rls");
 rlschart.addEventListener("click",function(){
     console.log("clicked")
     if(hide === true){
+        rlschart.innerHTML = "Hide Relationship Chart"
         svgdiv.hidden = false;
         hide = false;
     } else {
+        rlschart.innerHTML = "Show Relationship Chart"
         svgdiv.hidden = true;
         hide = true;
     }
