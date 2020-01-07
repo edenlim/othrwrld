@@ -4,6 +4,12 @@
 	</div>
 
 	<!-- <%= javascript_pack_tag 'hello_react' %> -->
+	<div>
+		<h1 class="rls" id="rls">Relationship Chart</h1>
+		<div id="d3div">
+			<%= javascript_pack_tag 'd3Graph/test.js' %>
+		</div>
+	</div>
 
 	<div class="tableDiv">
 	<table>
@@ -29,11 +35,8 @@
 
 	<div class="createNew"><%= link_to 'New Character', new_character_path %></div>
 
-	<h1 class="rls">Relationship Chart</h1>
-	<div>
 
-		<%= javascript_pack_tag 'd3Graph/test.js' %>
-	</div>
+
 </div>
 
 <%= stylesheet_link_tag 'template' %>

@@ -1,104 +1,7 @@
-console.log("WORKINGS")
+console.log("test.js is WORKING")
 
-// var graph = {
-// nodes: [
-// {
-// id: 1,
-// name: "J",
-// qualities: "{Hair: Red}",
-// user_id: 1,
-// created_at: "2019-12-02T06:44:39.738Z",
-// updated_at: "2019-12-02T06:44:39.738Z"
-// },
-// {
-// id: 2,
-// name: "H",
-// qualities: "{Hair: Black}",
-// user_id: 1,
-// created_at: "2019-12-02T06:44:39.751Z",
-// updated_at: "2019-12-02T06:44:39.751Z"
-// },
-// {
-// id: 3,
-// name: "M",
-// qualities: "{Hair: Rainbow}",
-// user_id: 1,
-// created_at: "2019-12-02T06:44:39.760Z",
-// updated_at: "2019-12-02T06:44:39.760Z"
-// },
-// {
-// id: 4,
-// name: "R",
-// qualities: "{Hair: Black and white}",
-// user_id: 1,
-// created_at: "2019-12-02T06:44:39.766Z",
-// updated_at: "2019-12-02T06:44:39.766Z"
-// },
-// {
-// id: 5,
-// name: "D",
-// qualities: "{Hair: Black}",
-// user_id: 1,
-// created_at: "2019-12-02T06:44:39.772Z",
-// updated_at: "2019-12-02T06:44:39.772Z"
-// },
-// {
-// id: 6,
-// name: "H",
-// qualities: "{}",
-// user_id: 1,
-// created_at: "2019-12-02T07:52:26.376Z",
-// updated_at: "2019-12-02T07:52:26.376Z"
-// }
-// ],
-// links: [
-// {
-// id: 1,
-// character_id: 1,
-// character2: 2,
-// affiliation: "Cousin",
-// created_at: "2019-12-02T06:44:39.800Z",
-// updated_at: "2019-12-02T06:44:39.800Z"
-// },
-// {
-// id: 2,
-// character_id: 1,
-// character2: 4,
-// affiliation: "Friend",
-// created_at: "2019-12-02T06:44:39.811Z",
-// updated_at: "2019-12-02T06:44:39.811Z"
-// },
-// {
-// id: 3,
-// character_id: 2,
-// character2: 3,
-// affiliation: "Friend",
-// created_at: "2019-12-02T06:44:39.819Z",
-// updated_at: "2019-12-02T06:44:39.819Z"
-// },
-// {
-// id: 4,
-// character_id: 2,
-// character2: 5,
-// affiliation: "Couple",
-// created_at: "2019-12-02T06:44:39.830Z",
-// updated_at: "2019-12-02T06:44:39.830Z"
-// },
-// {
-// id: 5,
-// character_id: 3,
-// character2: 5,
-// affiliation: "Friend",
-// created_at: "2019-12-02T06:44:39.843Z",
-// updated_at: "2019-12-02T06:44:39.843Z"
-// }
-// ]
-// }
-
-//CSS FILE IS TEMPLATE.SCSS
-
-
-var svg = d3.select("body").append('svg'),
+//<------ D3 ------>
+var svg = d3.select("#d3div").append('svg'),
     width = svg.attr("width"),
     height = svg.attr("height");
 
@@ -221,3 +124,20 @@ function dragended(d) {
         d.fy = null;
     }
 };
+
+//<------ JS ------>
+var hide = true;
+var svgdiv = document.getElementById("d3div")
+svgdiv.hidden = true;
+var rlschart = document.getElementById("rls");
+
+rlschart.addEventListener("click",function(){
+    console.log("clicked")
+    if(hide === true){
+        svgdiv.hidden = false;
+        hide = false;
+    } else {
+        svgdiv.hidden = true;
+        hide = true;
+    }
+})
