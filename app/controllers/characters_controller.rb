@@ -86,7 +86,10 @@ class CharactersController < ApplicationController
     @exist = Relationship.where(character_id: params[:id]).or(Relationship.where(character2: params[:id]))
     # @data = @character.merge(@exist)
     # render plain: @exist.inspect
+    Quality.where(character_id: params[:id]).delete_all
     @character.destroy
+
+
     Relationship.where(id: @exist.map(&:id)).delete_all
     redirect_to characters_path
 

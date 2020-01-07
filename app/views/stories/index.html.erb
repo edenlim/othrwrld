@@ -10,7 +10,7 @@
 	      <th>Name</th>
 	      <th>Universe</th>
 	      <th>Genre</th>
-	      <th>Summary</th>
+	      <!-- <th>Summary</th> -->
 	      <th colspan="3"></th>
 	    </tr>
 	  </thead>
@@ -21,7 +21,7 @@
 	        <td><%= story.name %></td>
 	        <td><%= story.universe.name %></td>
 	        <td><%= story.genre.name %></td>
-	        <td><%= story.summary %></td>
+	        <!-- <td><%= story.summary %></td> -->
 	        <td class="linkButton"><%= link_to 'Show', story %></td>
 	        <td class="linkButton"><%= link_to 'Edit', edit_story_path(story) %></td>
 	        <td class="linkButton"><%= link_to 'Destroy', story, method: :delete, data: { confirm: 'Are you sure?' } %></td>
