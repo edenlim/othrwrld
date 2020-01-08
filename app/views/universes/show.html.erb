@@ -9,7 +9,7 @@
 	<div class="contain">
 		<h1><strong>List of stories:</strong></h1>
 		<% @universe.story.each do |story| %>
-			<p><%= story.name %></p>
+			<p><%= link_to story.name, story_path %></p>
 		<% end %>
 	</div>
 
